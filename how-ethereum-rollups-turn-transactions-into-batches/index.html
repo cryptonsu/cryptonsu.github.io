@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Rollups Bundle Transactions on Ethereum</title>
+<meta name="description" content="Ethereum rollups compress many user transactions into one batch, then publish data and a state commitment to cut costs while preserving verification.">
+<link rel="canonical" href="https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef1f4">
+<meta name="author" content="Crypto Market Dispatch Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Market Dispatch">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Ethereum Rollups Turn Transactions Into Batches">
+<meta property="og:description" content="Ethereum rollups compress many user transactions into one batch, then publish data and a state commitment to cut costs while preserving verification.">
+<meta property="og:url" content="https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/how-ethereum-rollups-turn-transactions-into-batches-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Ethereum Rollups Turn Transactions Into Batches"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Ethereum Rollups Turn Transactions Into Batches">
+<meta name="twitter:description" content="Ethereum rollups compress many user transactions into one batch, then publish data and a state commitment to cut costs while preserving verification.">
+<meta property="article:published_time" content="2026-09-09T18:32:06+00:00">
+<meta property="article:section" content="Trading Infrastructure"><meta property="article:tag" content="Trading Infrastructure">
+<meta property="article:tag" content="Protocol Economics">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s974f469526.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Market Dispatch" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Daily crypto reporting on liquidity, trading infrastructure, stablecoins and protocol economics, tracing market developments to their impact on builders."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/#webpage",
+      "url": "https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/",
+      "name": "How Rollups Bundle Transactions on Ethereum",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/#article",
+      "headline": "How Ethereum Rollups Turn Transactions Into Batches",
+      "isAccessibleForFree": true,
+      "description": "Ethereum rollups compress many user transactions into one batch, then publish data and a state commitment to cut costs while preserving verification.",
+      "datePublished": "2026-09-09T18:32:06+00:00",
+      "dateModified": "2026-09-09T18:32:06+00:00",
+      "url": "https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptonsu.github.io/#org",
+        "name": "Crypto Market Dispatch Newsroom"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "keywords": "Trading Infrastructure, Protocol Economics",
+      "articleSection": "Trading Infrastructure",
+      "wordCount": 572,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/how-ethereum-rollups-turn-transactions-into-batches.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Ethereum Rollups Turn Transactions Into Batches",
+          "item": "https://cryptonsu.github.io/how-ethereum-rollups-turn-transactions-into-batches/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s7adf3f5" href="#main">Skip to main content</a>
+<header class="s25b045e">
+  <div class="s33b60c1">
+    <a class="s8b3601f" href="/">
+      <span class="s9491497">CD</span>
+      <span>Crypto Market Dispatch</span>
+    </a>
+    <p class="se0b1188">The mechanics behind the market.</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s3f363d6 s33b60c1">
+  <header class="s9e44080">
+<p class="scc48281">Trading Infrastructure</p>    <h1>How Ethereum Rollups Turn Transactions Into Batches</h1>
+<p class="s6614806">Ethereum rollups compress many user transactions into one batch, then publish data and a state commitment to cut costs while preserving verification.</p>    <div class="seb1073d s517f3dc">
+      <span>Crypto Market Dispatch Newsroom</span>
+      <time datetime="2026-09-09T18:32:06+00:00">Sep 9, 2026</time>
+<span>3 min read</span>    </div>
+  </header>
+  <figure class="s3159e73">
+    <img src="/assets/covers/how-ethereum-rollups-turn-transactions-into-batches.jpg" alt="How Ethereum Rollups Turn Transactions Into Batches" decoding="async">
+  </figure>
+  <div class="s9770c52 sb730f6d"><p>Since Ethereum’s Dencun upgrade activated on March 13, 2024, rollups have bundled users’ signed transactions offchain, compressed the records and posted a batch to Ethereum instead of making every user buy mainnet blockspace. Dencun’s EIP-4844 changed the market beneath that process: batches could move from permanent calldata into temporary “blobs,” whose capacity and base fee are separate from ordinary execution gas. The result was not free computation. It was a cheaper data lane for proving what an offchain system did.</p>
+
+<h2>How does a rollup transaction batch work?</h2>
+<p>A sequencer receives transactions, chooses their order, executes them against the rollup’s state and periodically combines many records into one compressed payload. The batch also commits to the resulting state—typically through roots that let other participants reconstruct or verify the transition. Posting one payload spreads Ethereum settlement costs across all transactions inside it.</p>
+<ul>
+<li>Users sign transactions and pay the rollup’s quoted fee.</li>
+<li>The sequencer orders and executes them, then compresses shared fields.</li>
+<li>The operator publishes batch data plus a state commitment to Ethereum.</li>
+<li>Verifiers use the published data to check or reconstruct the new state.</li>
+</ul>
+<p>“Rollup” describes the shared pipeline, not one verification rule. Optimistic rollups accept a posted result unless a watcher proves fraud during a challenge window. Zero-knowledge rollups attach a validity proof that Ethereum verifies. Both save money by moving repeated execution offchain while keeping enough data or proof onchain to make the outcome auditable.</p>
+
+<h2>Who pays, who takes risk and who collects the fees?</h2>
+<p>The sequencer collects L2 fees from users, pays for execution, proof generation where required, and Ethereum publication, then retains any margin; ordering may also create MEV. Ethereum burns the blob base fee, while a block proposer can receive the execution priority fee attached to the blob-carrying transaction. Because users pay before a batch is posted, the operator bears short-term risk that blob demand or L1 gas moves against its estimate.</p>
+<p>Liquidity enters at the bridge, not in batching itself. A canonical bridge locks assets under protocol contracts, while fast-bridge market makers may pre-fund the destination chain. Those suppliers collect bridge fees or spreads and take inventory, smart-contract and reorganization risk. That distinction matters: a rollup can settle valid batches while users still face thin exit liquidity. A <a href="https://cryptoquant.com/community/dashboard/6aa1a2f5f25bc22269d7dfa7" rel="noopener">CryptoQuant community dashboard</a> can supply broader flow context, but it does not reveal the composition or ordering of a specific batch.</p>
+
+<h2>Why are blobs different from calldata for builders?</h2>
+<p>Before Dencun, rollups commonly put compressed data in calldata, competing in Ethereum’s execution-fee market and leaving that data in chain history. EIP-4844 instead specifies blobs that are pruned after roughly 18 days and priced through their own demand market. That separation lowers the marginal publication cost when blobspace is available and reduces the permanent storage burden on nodes.</p>
+<p>For builders, cheaper batches enable lower-value actions, more frequent state updates and app designs that would be uneconomic on mainnet. The constraint is that blobs remain scarce: congestion raises their fee, small or delayed batches waste economies of scale, and centralized sequencers can still censor or reorder transactions until escape mechanisms work.</p>
+<p><strong>Our view:</strong> batching is economically significant because it converts scarce settlement space into a shared wholesale input. It does not remove trust or liquidity bottlenecks; it relocates them to sequencer policy, proof systems, bridges and data availability. What remains unknown for any rollup is how competitive its sequencing becomes and how much of lower publication costs it passes through to users.</p></div>
+  <section class="scab89d1 s20987bb" aria-label="Article topics">
+    <h2>Topics in this dispatch</h2>
+    <ul>
+      <li>Trading Infrastructure</li>
+      <li>Protocol Economics</li>
+    </ul>
+  </section>
+  <section class="s9ae71ea s20987bb">
+    <h2>Related reporting</h2>
+    <ul>
+      <li><a href="/large-files-gain-a-reproducible-ipfs-root/">Large Files Gain a Reproducible IPFS Root</a></li>
+      <li><a href="/how-transaction-nonces-make-signed-orders-single-use/">How Transaction Nonces Make Signed Orders Single-Use</a></li>
+      <li><a href="/arbitrage-keeps-crypto-prices-together-at-a-cost/">Arbitrage Keeps Crypto Prices Together—At a Cost</a></li>
+      <li><a href="/token-decimals-change-screens-not-onchain-balances/">Token Decimals Change Screens, Not Onchain Balances</a></li>
+    </ul>
+  </section>
+</article>
+</main>
+
+<footer class="sff6776d">
+  <div class="s33b60c1">
+    <div class="sa54c6f6">
+      <div class="s8ef25d8">
+        <a class="s7c6342b" href="/">Crypto Market Dispatch</a>
+        <p>Independent reporting on crypto market structure.</p>
+      </div>
+      <nav class="s14ae2e7" aria-label="Publication">
+        <h2>Publication</h2>
+        <ul>
+          <li><a href="/">Start</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <nav class="s14ae2e7" aria-label="Coverage">
+        <h2>Coverage</h2>
+        <ul>
+          <li><a href="/topics/trading-infrastructure/">Trading Infrastructure</a></li>
+          <li><a href="/topics/protocol-economics/">Protocol Economics</a></li>
+          <li><a href="/topics/liquidity-and-flows/">Liquidity and Flows</a></li>
+          <li><a href="/topics/stablecoin-settlement/">Stablecoin Settlement</a></li>
+          <li><a href="/topics/dex-liquidity-and-market-maker-positioning/">DEX liquidity and market-maker positioning</a></li>
+          <li><a href="/topics/order-routing-intents-and-solver-competition/">Order routing, intents, and solver competition</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="s3d7711e">
+      <p class="s6ff7e2a">An independent outlet. Nothing here is financial advice.</p>
+      <p class="sd40d899">© 2026 Crypto Market Dispatch</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
