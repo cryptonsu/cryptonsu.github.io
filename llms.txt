@@ -1,0 +1,10 @@
+# Crypto Market Dispatch
+
+> Daily crypto reporting on liquidity, trading infrastructure, stablecoins and protocol economics, tracing market developments to their impact on builders.
+
+Coverage: Liquidity and Flows, Trading Infrastructure, Stablecoin Settlement, Protocol Economics.
+
+## Key pages
+- [Homepage](https://cryptonsu.github.io/): latest reporting and analysis.
+- [About](https://cryptonsu.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://cryptonsu.github.io/archive/): everything published.
