@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Decimals: How Displayed Balances Work</title>
+<meta name="description" content="Token decimals tell wallets how to scale integer balances; mistakes can misstate holdings, distort quotes and break minimum-size checks without moving funds.">
+<link rel="canonical" href="https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef1f4">
+<meta name="author" content="Crypto Market Dispatch Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Market Dispatch">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Token Decimals Change Screens, Not Onchain Balances">
+<meta property="og:description" content="Token decimals tell wallets how to scale integer balances; mistakes can misstate holdings, distort quotes and break minimum-size checks without moving funds.">
+<meta property="og:url" content="https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/token-decimals-change-screens-not-onchain-balances-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Token Decimals Change Screens, Not Onchain Balances"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Token Decimals Change Screens, Not Onchain Balances">
+<meta name="twitter:description" content="Token decimals tell wallets how to scale integer balances; mistakes can misstate holdings, distort quotes and break minimum-size checks without moving funds.">
+<meta property="article:published_time" content="2026-09-09T15:20:47+00:00">
+<meta property="article:section" content="Trading Infrastructure"><meta property="article:tag" content="Trading Infrastructure">
+<meta property="article:tag" content="Liquidity and Flows">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s974f469526.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Market Dispatch" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Daily crypto reporting on liquidity, trading infrastructure, stablecoins and protocol economics, tracing market developments to their impact on builders."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/#webpage",
+      "url": "https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/",
+      "name": "Token Decimals: How Displayed Balances Work",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/#article",
+      "headline": "Token Decimals Change Screens, Not Onchain Balances",
+      "isAccessibleForFree": true,
+      "description": "Token decimals tell wallets how to scale integer balances; mistakes can misstate holdings, distort quotes and break minimum-size checks without moving funds.",
+      "datePublished": "2026-09-09T15:20:47+00:00",
+      "dateModified": "2026-09-09T15:20:47+00:00",
+      "url": "https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptonsu.github.io/#org",
+        "name": "Crypto Market Dispatch Newsroom"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "keywords": "Trading Infrastructure, Liquidity and Flows",
+      "articleSection": "Trading Infrastructure",
+      "wordCount": 533,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/token-decimals-change-screens-not-onchain-balances.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Token Decimals Change Screens, Not Onchain Balances",
+          "item": "https://cryptonsu.github.io/token-decimals-change-screens-not-onchain-balances/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s7adf3f5" href="#main">Skip to main content</a>
+<header class="s25b045e">
+  <div class="s33b60c1">
+    <a class="s8b3601f" href="/">
+      <span class="s9491497">CD</span>
+      <span>Crypto Market Dispatch</span>
+    </a>
+    <p class="se0b1188">The mechanics behind the market.</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s3f363d6 s33b60c1">
+  <header class="s9e44080">
+<p class="scc48281">Trading Infrastructure</p>    <h1>Token Decimals Change Screens, Not Onchain Balances</h1>
+<p class="s6614806">Token decimals tell wallets how to scale integer balances; mistakes can misstate holdings, distort quotes and break minimum-size checks without moving funds.</p>    <div class="seb1073d s517f3dc">
+      <span>Crypto Market Dispatch Newsroom</span>
+      <time datetime="2026-09-09T15:20:47+00:00">Sep 9, 2026</time>
+<span>2 min read</span>    </div>
+  </header>
+  <figure class="s3159e73">
+    <img src="/assets/covers/token-decimals-change-screens-not-onchain-balances.jpg" alt="Token Decimals Change Screens, Not Onchain Balances" decoding="async">
+  </figure>
+  <div class="s9770c52 sb730f6d"><p>Since ERC-20 was created on November 19, 2015, token decimals have changed displayed balances by telling interfaces how many places to shift an integer, not by changing the integer held onchain. The standard made <strong>decimals</strong> optional metadata: a value of 6 means dividing a raw balance by 1,000,000 for display. That design moved denomination handling out of the ledger and into wallets, exchanges and trading interfaces, enabling one integer-based token interface to represent assets with different precision.</p>
+
+<h2>How do token decimals change a wallet balance?</h2>
+<p>A wallet calculates the visible amount as the raw balance divided by 10 raised to the token’s decimals. A contract balance of 1,234,500 therefore displays as 1.2345 tokens when decimals is 6. Read with 18 decimals, the same integer displays as 0.0000000000012345. No assets appeared or vanished; only the unit label changed.</p>
+<p>The reverse happens when a user submits a transfer. Sending 1.25 units of a six-decimal token requires the integer 1,250,000. Smart contracts transfer that integer. Front ends parse the human amount before the call and format the returned integer afterward. This is why a wrong decimal setting can show an alarming balance or construct an oversized transaction even though the token contract’s accounting remains internally consistent.</p>
+
+<h2>Why do tokens use different decimal counts?</h2>
+<p>Different decimal counts trade familiar denominations against granularity. OpenZeppelin’s widely used ERC-20 implementation defaults to 18, matching Ether’s relationship to wei, while Circle specifies six decimals for native USDC. Six decimals makes one smallest USDC unit equal to 0.000001 USDC; 18 permits much finer fractions.</p>
+<p>Before ERC-20-style metadata, each application could impose its own denomination convention. The optional decimals field gave builders a common query, but not a universal value or a guarantee that metadata exists. That flexibility supports currencies, governance assets and receipt tokens through one interface, while forcing integrations to normalize every asset separately.</p>
+<ul>
+<li>Read decimals from the correct token contract on each chain; never assume 18.</li>
+<li>Keep raw amounts as integers or arbitrary-precision values until display.</li>
+<li>Normalize both assets before calculating prices, slippage or minimum trades.</li>
+<li>Treat missing or contradictory metadata as an integration error, not a cosmetic glitch.</li>
+</ul>
+
+<h2>Can token decimals change prices or liquidity?</h2>
+<p>Decimals do not change economic value when an integration scales both sides correctly, but a scaling error can corrupt a quoted price, deposit ratio or minimum-output check. An automated market maker holds raw integer reserves. Its interface must normalize those reserves before telling a trader how many units one token buys.</p>
+<p>The roles are unchanged by presentation: liquidity providers supply both pool assets and bear inventory and impermanent-loss risk; traders take execution and slippage risk and pay the swap fee; providers generally earn that fee, while some protocols direct a configured share to a protocol recipient. The <a href="https://paragraph.com/@brugmanmandie@gmail.com/frax-swap-impermanent-loss-a-simple-lp-example" rel="noopener">Fraxswap liquidity-provider example</a> shows why reserve movements, not decimal formatting, create the provider’s economic exposure.</p>
+<p><strong>Our view:</strong> decimals are an integration-risk multiplier, not tokenomics. They let builders reuse integer arithmetic across radically different assets, but one hard-coded assumption can make an otherwise sound market unsafe to use. What remains unknowable from a ticker alone is the authoritative precision: canonical, bridged and wrapped versions may differ, so only the deployed contract and its verified integration settle the question.</p></div>
+  <section class="scab89d1 s20987bb" aria-label="Article topics">
+    <h2>Topics in this dispatch</h2>
+    <ul>
+      <li>Trading Infrastructure</li>
+      <li>Liquidity and Flows</li>
+    </ul>
+  </section>
+  <section class="s9ae71ea s20987bb">
+    <h2>Related reporting</h2>
+    <ul>
+      <li><a href="/what-spv-proofs-let-bitcoin-wallets-verify/">What SPV Proofs Let Bitcoin Wallets Verify</a></li>
+      <li><a href="/how-transaction-nonces-make-signed-orders-single-use/">How Transaction Nonces Make Signed Orders Single-Use</a></li>
+      <li><a href="/pons-pushes-robinhood-chain-fees-to-6m-record/">Pons Pushes Robinhood Chain Fees to $6M Record</a></li>
+      <li><a href="/tether-fasanara-anchor-stablefund-with-400-million/">Tether, Fasanara Anchor StableFund With $400 Million</a></li>
+    </ul>
+  </section>
+</article>
+</main>
+
+<footer class="sff6776d">
+  <div class="s33b60c1">
+    <div class="sa54c6f6">
+      <div class="s8ef25d8">
+        <a class="s7c6342b" href="/">Crypto Market Dispatch</a>
+        <p>Independent reporting on crypto market structure.</p>
+      </div>
+      <nav class="s14ae2e7" aria-label="Publication">
+        <h2>Publication</h2>
+        <ul>
+          <li><a href="/">Start</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <nav class="s14ae2e7" aria-label="Coverage">
+        <h2>Coverage</h2>
+        <ul>
+          <li><a href="/topics/trading-infrastructure/">Trading Infrastructure</a></li>
+          <li><a href="/topics/stablecoin-settlement/">Stablecoin Settlement</a></li>
+          <li><a href="/topics/liquidity-and-flows/">Liquidity and Flows</a></li>
+          <li><a href="/topics/protocol-economics/">Protocol Economics</a></li>
+          <li><a href="/topics/dex-liquidity-and-market-maker-positioning/">DEX liquidity and market-maker positioning</a></li>
+          <li><a href="/topics/order-routing-intents-and-solver-competition/">Order routing, intents, and solver competition</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="s3d7711e">
+      <p class="s6ff7e2a">An independent outlet. Nothing here is financial advice.</p>
+      <p class="sd40d899">© 2026 Crypto Market Dispatch</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
