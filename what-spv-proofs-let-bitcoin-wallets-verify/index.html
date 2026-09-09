@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPV Proofs: What Bitcoin Wallets Can Verify</title>
+<meta name="description" content="SPV proofs let light wallets verify transaction inclusion and chain work, but not full block validity, fee logic or the absence of hidden transactions.">
+<link rel="canonical" href="https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef1f4">
+<meta name="author" content="Crypto Market Dispatch Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Market Dispatch">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What SPV Proofs Let Bitcoin Wallets Verify">
+<meta property="og:description" content="SPV proofs let light wallets verify transaction inclusion and chain work, but not full block validity, fee logic or the absence of hidden transactions.">
+<meta property="og:url" content="https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/what-spv-proofs-let-bitcoin-wallets-verify-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What SPV Proofs Let Bitcoin Wallets Verify"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What SPV Proofs Let Bitcoin Wallets Verify">
+<meta name="twitter:description" content="SPV proofs let light wallets verify transaction inclusion and chain work, but not full block validity, fee logic or the absence of hidden transactions.">
+<meta property="article:published_time" content="2026-09-09T15:07:55+00:00">
+<meta property="article:section" content="Trading Infrastructure"><meta property="article:tag" content="Trading Infrastructure">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s974f469526.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Market Dispatch" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Daily crypto reporting on liquidity, trading infrastructure, stablecoins and protocol economics, tracing market developments to their impact on builders."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/#webpage",
+      "url": "https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/",
+      "name": "SPV Proofs: What Bitcoin Wallets Can Verify",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/#article",
+      "headline": "What SPV Proofs Let Bitcoin Wallets Verify",
+      "isAccessibleForFree": true,
+      "description": "SPV proofs let light wallets verify transaction inclusion and chain work, but not full block validity, fee logic or the absence of hidden transactions.",
+      "datePublished": "2026-09-09T15:07:55+00:00",
+      "dateModified": "2026-09-09T15:07:55+00:00",
+      "url": "https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptonsu.github.io/#org",
+        "name": "Crypto Market Dispatch Newsroom"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "keywords": "Trading Infrastructure",
+      "articleSection": "Trading Infrastructure",
+      "wordCount": 517,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/what-spv-proofs-let-bitcoin-wallets-verify.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What SPV Proofs Let Bitcoin Wallets Verify",
+          "item": "https://cryptonsu.github.io/what-spv-proofs-let-bitcoin-wallets-verify/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s7adf3f5" href="#main">Skip to main content</a>
+<header class="s25b045e">
+  <div class="s33b60c1">
+    <a class="s8b3601f" href="/">
+      <span class="s9491497">CD</span>
+      <span>Crypto Market Dispatch</span>
+    </a>
+    <p class="se0b1188">The mechanics behind the market.</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s3f363d6 s33b60c1">
+  <header class="s9e44080">
+<p class="scc48281">Trading Infrastructure</p>    <h1>What SPV Proofs Let Bitcoin Wallets Verify</h1>
+<p class="s6614806">SPV proofs let light wallets verify transaction inclusion and chain work, but not full block validity, fee logic or the absence of hidden transactions.</p>    <div class="seb1073d s517f3dc">
+      <span>Crypto Market Dispatch Newsroom</span>
+      <time datetime="2026-09-09T15:07:55+00:00">Sep 9, 2026</time>
+<span>2 min read</span>    </div>
+  </header>
+  <figure class="s3159e73">
+    <img src="/assets/covers/what-spv-proofs-let-bitcoin-wallets-verify.jpg" alt="What SPV Proofs Let Bitcoin Wallets Verify" decoding="async">
+  </figure>
+  <div class="s9770c52 sb730f6d"><p>On May 24, 2017, BIP 157 specified a client-side filter system that lets an SPV wallet find candidate Bitcoin transactions, while Merkle proofs let it verify their inclusion in the most-work header chain. The mechanism changed who performs the search: instead of revealing a wallet-shaped query to a server, the wallet can inspect standard filters locally and request relevant blocks. That improves discovery and privacy, but it does not turn a light wallet into a full validator.</p>
+
+<h2>What does an SPV proof actually prove?</h2>
+<p>An SPV proof proves that a specified transaction was committed to by the Merkle root in a particular block header. The wallet hashes the transaction through the supplied Merkle branch, compares the result with the header’s root, verifies the header’s proof of work and follows the header chain with the most accumulated work.</p>
+<ul>
+<li>The transaction appears in the claimed block.</li>
+<li>The block header satisfies its stated proof-of-work target.</li>
+<li>The header links to the wallet’s view of the chain.</li>
+<li>Later headers show the transaction’s confirmation depth.</li>
+</ul>
+<p>The proof is compact because the branch contains only the sibling hashes needed to reconstruct the root, not every transaction in the block. Bitcoin’s original paper describes 80-byte headers and explicitly says the simplified client cannot check the transaction’s acceptance for itself as a full node can.</p>
+
+<h2>What can an SPV wallet not verify?</h2>
+<p>It cannot prove that every transaction in the block obeys Bitcoin’s consensus rules, that no relevant transaction was withheld, or that an unseen transaction does not exist. A valid inclusion proof says “this transaction is here”; it is not a proof of completeness. Nor does confirmation establish the current mempool state, the best fee for the next block or irreversible settlement. A wallet isolated by hostile peers may also receive a misleading view until it reaches an honest peer with the stronger chain.</p>
+<p>The risk allocation is therefore clear. Miners supply hash power, bear equipment and electricity risk, and collect block subsidies and transaction fees. Full-node operators validate blocks and supply peer data without receiving a protocol-level serving fee. The light-wallet user saves storage and computation but accepts residual peer-selection and incomplete-validation risk.</p>
+
+<h2>How did compact block filters improve SPV?</h2>
+<p>Compact block filters moved matching from the serving node to the wallet. Under BIP 37, a wallet sent a probabilistic Bloom filter to a peer, which matched transactions and returned partial Merkle data; this could expose wallet interests, consume server resources and permit omission. Under BIP 157, nodes construct the same deterministic filter for each block, clients test it privately, and matching blocks can be fetched from different peers. Filter headers help expose inconsistent responses, although they do not make filters consensus commitments.</p>
+<p>This is verification infrastructure, not a liquidity venue. In a <a href="https://medium.com/@boydrsdurganqjf666/frax-swap-vs-uniswap-how-stablecoins-hold-1-6a230deea8ed" rel="noopener">comparison of Fraxswap and Uniswap</a>, liquidity providers take inventory risk and traders pay execution fees; SPV peers instead relay evidence without an embedded fee market. Our assessment is that SPV is materially useful for constrained wallets, but unsuitable as a claim of full validation. What remains implementation-dependent is peer diversity, filter support and how clearly each wallet communicates those limits.</p></div>
+  <section class="scab89d1 s20987bb" aria-label="Article topics">
+    <h2>Topics in this dispatch</h2>
+    <ul>
+      <li>Trading Infrastructure</li>
+    </ul>
+  </section>
+  <section class="s9ae71ea s20987bb">
+    <h2>Related reporting</h2>
+    <ul>
+      <li><a href="/how-transaction-nonces-make-signed-orders-single-use/">How Transaction Nonces Make Signed Orders Single-Use</a></li>
+      <li><a href="/caris-32-5-million-bank-round-funds-a-deposit-rail/">Cari’s $32.5 Million Bank Round Funds a Deposit Rail</a></li>
+      <li><a href="/block-seeks-federal-charter-for-builders-bank/">Block Seeks Federal Charter for Builders Bank</a></li>
+      <li><a href="/pons-pushes-robinhood-chain-fees-to-6m-record/">Pons Pushes Robinhood Chain Fees to $6M Record</a></li>
+    </ul>
+  </section>
+</article>
+</main>
+
+<footer class="sff6776d">
+  <div class="s33b60c1">
+    <div class="sa54c6f6">
+      <div class="s8ef25d8">
+        <a class="s7c6342b" href="/">Crypto Market Dispatch</a>
+        <p>Independent reporting on crypto market structure.</p>
+      </div>
+      <nav class="s14ae2e7" aria-label="Publication">
+        <h2>Publication</h2>
+        <ul>
+          <li><a href="/">Start</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <nav class="s14ae2e7" aria-label="Coverage">
+        <h2>Coverage</h2>
+        <ul>
+          <li><a href="/topics/stablecoin-settlement/">Stablecoin Settlement</a></li>
+          <li><a href="/topics/trading-infrastructure/">Trading Infrastructure</a></li>
+          <li><a href="/topics/protocol-economics/">Protocol Economics</a></li>
+          <li><a href="/topics/dex-liquidity-and-market-maker-positioning/">DEX liquidity and market-maker positioning</a></li>
+          <li><a href="/topics/liquidity-and-flows/">Liquidity and Flows</a></li>
+          <li><a href="/topics/order-routing-intents-and-solver-competition/">Order routing, intents, and solver competition</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="s3d7711e">
+      <p class="s6ff7e2a">An independent outlet. Nothing here is financial advice.</p>
+      <p class="sd40d899">© 2026 Crypto Market Dispatch</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
