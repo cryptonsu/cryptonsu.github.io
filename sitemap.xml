@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://cryptonsu.github.io/</loc><lastmod>2026-09-09</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptonsu.github.io/wallet-addresses-look-random-by-cryptographic-design/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/market-depth-shows-the-cost-behind-cryptos-quoted-price/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/universal-bridge-skips-the-wrapper-chain-not-the-wrapper/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
