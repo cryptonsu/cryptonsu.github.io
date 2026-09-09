@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hierarchical Wallet Path Numbers Explained</title>
+<meta name="description" content="Hierarchical wallet path numbers turn one seed into ordered key branches, improving separation and recovery while making conventions a compatibility dependency.">
+<link rel="canonical" href="https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#eef1f4">
+<meta name="author" content="Crypto Market Dispatch Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Market Dispatch">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="The Path Numbers Behind Hierarchical Wallet Addresses">
+<meta property="og:description" content="Hierarchical wallet path numbers turn one seed into ordered key branches, improving separation and recovery while making conventions a compatibility dependency.">
+<meta property="og:url" content="https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/the-path-numbers-behind-hierarchical-wallet-addresses-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Path Numbers Behind Hierarchical Wallet Addresses"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Path Numbers Behind Hierarchical Wallet Addresses">
+<meta name="twitter:description" content="Hierarchical wallet path numbers turn one seed into ordered key branches, improving separation and recovery while making conventions a compatibility dependency.">
+<meta property="article:published_time" content="2026-09-09T21:50:48+00:00">
+<meta property="article:section" content="Trading Infrastructure"><meta property="article:tag" content="Trading Infrastructure">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s974f469526.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Market Dispatch" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Daily crypto reporting on liquidity, trading infrastructure, stablecoins and protocol economics, tracing market developments to their impact on builders."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/#webpage",
+      "url": "https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/",
+      "name": "Hierarchical Wallet Path Numbers Explained",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/#article",
+      "headline": "The Path Numbers Behind Hierarchical Wallet Addresses",
+      "isAccessibleForFree": true,
+      "description": "Hierarchical wallet path numbers turn one seed into ordered key branches, improving separation and recovery while making conventions a compatibility dependency.",
+      "datePublished": "2026-09-09T21:50:48+00:00",
+      "dateModified": "2026-09-09T21:50:48+00:00",
+      "url": "https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptonsu.github.io/#org",
+        "name": "Crypto Market Dispatch Newsroom"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "keywords": "Trading Infrastructure",
+      "articleSection": "Trading Infrastructure",
+      "wordCount": 536,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/the-path-numbers-behind-hierarchical-wallet-addresses.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Path Numbers Behind Hierarchical Wallet Addresses",
+          "item": "https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s7adf3f5" href="#main">Skip to main content</a>
+<header class="s25b045e">
+  <div class="s33b60c1">
+    <a class="s8b3601f" href="/">
+      <span class="s9491497">CD</span>
+      <span>Crypto Market Dispatch</span>
+    </a>
+    <p class="se0b1188">The mechanics behind the market.</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s3f363d6 s33b60c1">
+  <header class="s9e44080">
+<p class="scc48281">Trading Infrastructure</p>    <h1>The Path Numbers Behind Hierarchical Wallet Addresses</h1>
+<p class="s6614806">Hierarchical wallet path numbers turn one seed into ordered key branches, improving separation and recovery while making conventions a compatibility dependency.</p>    <div class="seb1073d s517f3dc">
+      <span>Crypto Market Dispatch Newsroom</span>
+      <time datetime="2026-09-09T21:50:48+00:00">Sep 9, 2026</time>
+<span>2 min read</span>    </div>
+  </header>
+  <figure class="s3159e73">
+    <img src="/assets/covers/the-path-numbers-behind-hierarchical-wallet-addresses.jpg" alt="The Path Numbers Behind Hierarchical Wallet Addresses" decoding="async">
+  </figure>
+  <div class="s9770c52 sb730f6d"><p>On February 11, 2012, BIP32 turned hierarchical wallet path numbers into coordinates: each integer selects one deterministic child key from a seed-rooted tree. The mechanism replaced the operational burden of backing up fresh, unrelated keys with repeatable derivation from an extended key, which combines a key with a 32-byte chain code. A path does not live onchain, move liquidity or set a fee. It tells wallet software which keys to derive; the resulting public key or script becomes an address.</p>
+
+<h2>What do the numbers in a wallet derivation path mean?</h2>
+<p>In a common BIP44 path such as <strong>m/44'/0'/0'/0/17</strong>, each number names a branch below the master node, m. BIP44, assigned on April 24, 2014, gave five levels standard meanings so independently built wallets could find the same keys:</p>
+<ul>
+<li><strong>44'</strong> identifies the BIP44 layout, rather than another wallet purpose.</li>
+<li><strong>0'</strong> selects Bitcoin's registered coin type; Ether uses 60'.</li>
+<li><strong>0'</strong> selects the first logical account.</li>
+<li><strong>0/17</strong> selects the external receiving chain and its eighteenth address, because indexing starts at zero; change conventionally uses branch 1.</li>
+</ul>
+<p>The numbers are inputs to child-key derivation, not account balances or blockchain IDs. Reusing a seed with a different path therefore produces a valid but different wallet—one reason a correct recovery phrase can appear empty in mismatched software.</p>
+
+<h2>Why are some path numbers hardened?</h2>
+<p>Apostrophes mark hardened children, which can be derived only from private parent material. BIP32 reserves indices from 0 through 2,147,483,647 for normal children and the upper half of the 32-bit range for hardened children; writing 44' is shorthand for adding 2,147,483,648.</p>
+<p>Normal derivation lets a payment server receive an extended public key and generate new deposit addresses without holding a spending key. That is useful separation, but it creates a sharp risk boundary: BIP32 warns that a parent extended public key plus any descendant non-hardened private key can reveal the parent private key. Hardened account branches block that route upward, at the cost of preventing public-only derivation across the boundary.</p>
+
+<h2>Do derivation paths change liquidity or transaction fees?</h2>
+<p>Derivation paths do not change liquidity or fees; they change control, bookkeeping and exposure. In the <a href="https://elegant-bayberry-652.notion.site/What-Universal-Bridge-Merchants-Actually-Do-in-2026-3d6a34834c6380f6ac04ed57e5cb9217" rel="noopener">operating model of universal bridge merchants</a>, a merchant can assign separate branches to networks, counterparties or settlement roles. The merchant still supplies inventory and bears inventory, custody and settlement risk. Users or the service pay transaction costs; validators or miners collect network fees, while the merchant may collect a quoted spread or service fee. None of those economics is encoded in the path.</p>
+
+<h2>Why do path numbers matter for wallet builders?</h2>
+<p>They matter because convention turns deterministic mathematics into interoperability. Before a shared hierarchy, software could derive perfectly valid trees that other software did not know where to scan. BIP44 improved portability, account separation and watch-only operations, but its discovery convention stops after 20 unused external addresses, so aggressive address issuance can strand funds from a default scan.</p>
+<p>The practical verdict is that path numbers are infrastructure metadata, not cosmetic labels: builders should version, store and export the exact derivation policy alongside seed backups. What remains unknowable from a seed alone is which competing purposes, coin types, accounts or custom branches an application used. Determinism recreates keys; convention is what makes them discoverable.</p></div>
+  <section class="scab89d1 s20987bb" aria-label="Article topics">
+    <h2>Topics in this dispatch</h2>
+    <ul>
+      <li>Trading Infrastructure</li>
+    </ul>
+  </section>
+  <section class="s9ae71ea s20987bb">
+    <h2>Related reporting</h2>
+    <ul>
+      <li><a href="/market-depth-shows-the-cost-behind-cryptos-quoted-price/">Market Depth Shows the Cost Behind Crypto’s Quoted Price</a></li>
+      <li><a href="/universal-bridge-skips-the-wrapper-chain-not-the-wrapper/">Universal Bridge Skips the Wrapper Chain, Not the Wrapper</a></li>
+      <li><a href="/how-ethereum-rollups-turn-transactions-into-batches/">How Ethereum Rollups Turn Transactions Into Batches</a></li>
+      <li><a href="/arbitrage-keeps-crypto-prices-together-at-a-cost/">Arbitrage Keeps Crypto Prices Together—At a Cost</a></li>
+    </ul>
+  </section>
+</article>
+</main>
+
+<footer class="sff6776d">
+  <div class="s33b60c1">
+    <div class="sa54c6f6">
+      <div class="s8ef25d8">
+        <a class="s7c6342b" href="/">Crypto Market Dispatch</a>
+        <p>Independent reporting on crypto market structure.</p>
+      </div>
+      <nav class="s14ae2e7" aria-label="Publication">
+        <h2>Publication</h2>
+        <ul>
+          <li><a href="/">Start</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <nav class="s14ae2e7" aria-label="Coverage">
+        <h2>Coverage</h2>
+        <ul>
+          <li><a href="/topics/trading-infrastructure/">Trading Infrastructure</a></li>
+          <li><a href="/topics/liquidity-and-flows/">Liquidity and Flows</a></li>
+          <li><a href="/topics/protocol-economics/">Protocol Economics</a></li>
+          <li><a href="/topics/stablecoin-settlement/">Stablecoin Settlement</a></li>
+          <li><a href="/topics/dex-liquidity-and-market-maker-positioning/">DEX liquidity and market-maker positioning</a></li>
+          <li><a href="/topics/order-routing-intents-and-solver-competition/">Order routing, intents, and solver competition</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="s3d7711e">
+      <p class="s6ff7e2a">An independent outlet. Nothing here is financial advice.</p>
+      <p class="sd40d899">© 2026 Crypto Market Dispatch</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
