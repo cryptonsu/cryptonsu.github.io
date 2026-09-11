@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://cryptonsu.github.io/</loc><lastmod>2026-09-10</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptonsu.github.io/</loc><lastmod>2026-09-11</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptonsu.github.io/layerzero-splits-automated-from-self-relayed-messages/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/wallet-addresses-look-random-by-cryptographic-design/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/the-path-numbers-behind-hierarchical-wallet-addresses/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/market-depth-shows-the-cost-behind-cryptos-quoted-price/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -21,8 +22,8 @@
 <url><loc>https://cryptonsu.github.io/sofi-and-payward-gain-the-route-while-customers-pay/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/bybit-halves-tradfi-rpi-rebates-as-taker-access-widens/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/topics/trading-infrastructure/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-<url><loc>https://cryptonsu.github.io/topics/liquidity-and-flows/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptonsu.github.io/topics/protocol-economics/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+<url><loc>https://cryptonsu.github.io/topics/liquidity-and-flows/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptonsu.github.io/topics/stablecoin-settlement/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptonsu.github.io/topics/dex-liquidity-and-market-maker-positioning/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://cryptonsu.github.io/topics/order-routing-intents-and-solver-competition/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
