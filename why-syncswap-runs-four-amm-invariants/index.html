@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SyncSwap AMM Invariants: Why There Are Four</title>
+<meta name="description" content="SyncSwap’s four pool models match different assets and LP risk appetites, trading a simpler AMM design for sharper routing and integration choices.">
+<link rel="canonical" href="https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"><meta name="theme-color" content="#eef1f4">
+<meta name="author" content="Crypto Market Dispatch Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Market Dispatch">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why SyncSwap Runs Four AMM Invariants">
+<meta property="og:description" content="SyncSwap’s four pool models match different assets and LP risk appetites, trading a simpler AMM design for sharper routing and integration choices.">
+<meta property="og:url" content="https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/why-syncswap-runs-four-amm-invariants-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why SyncSwap Runs Four AMM Invariants"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why SyncSwap Runs Four AMM Invariants">
+<meta name="twitter:description" content="SyncSwap’s four pool models match different assets and LP risk appetites, trading a simpler AMM design for sharper routing and integration choices.">
+<meta property="article:published_time" content="2026-09-11T17:38:52+00:00">
+<meta property="article:section" content="Trading Infrastructure"><meta property="article:tag" content="Trading Infrastructure">
+<meta property="article:tag" content="Protocol Economics">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s974f469526.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Market Dispatch" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Daily crypto reporting on liquidity, trading infrastructure, stablecoins and protocol economics, tracing market developments to their impact on builders."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/#webpage",
+      "url": "https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/",
+      "name": "SyncSwap AMM Invariants: Why There Are Four",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/#article",
+      "headline": "Why SyncSwap Runs Four AMM Invariants",
+      "isAccessibleForFree": true,
+      "description": "SyncSwap’s four pool models match different assets and LP risk appetites, trading a simpler AMM design for sharper routing and integration choices.",
+      "datePublished": "2026-09-11T17:38:52+00:00",
+      "dateModified": "2026-09-11T17:38:52+00:00",
+      "url": "https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://cryptonsu.github.io/#editorial",
+        "name": "Crypto Market Dispatch Newsroom",
+        "parentOrganization": {
+          "@id": "https://cryptonsu.github.io/#org"
+        }
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "keywords": "Trading Infrastructure, Protocol Economics",
+      "articleSection": "Trading Infrastructure",
+      "wordCount": 576,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/why-syncswap-runs-four-amm-invariants.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why SyncSwap Runs Four AMM Invariants",
+          "item": "https://cryptonsu.github.io/why-syncswap-runs-four-amm-invariants/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Market Dispatch",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s7adf3f5" href="#main">Skip to main content</a>
+<header class="s25b045e">
+  <div class="s33b60c1">
+    <a class="s8b3601f" href="/">
+      <span class="s9491497">CD</span>
+      <span>Crypto Market Dispatch</span>
+    </a>
+    <p class="se0b1188">The mechanics behind the market.</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s3f363d6 s33b60c1">
+  <header class="s9e44080">
+<p class="scc48281">Trading Infrastructure</p>    <h1>Why SyncSwap Runs Four AMM Invariants</h1>
+<p class="s6614806">SyncSwap’s four pool models match different assets and LP risk appetites, trading a simpler AMM design for sharper routing and integration choices.</p>    <div class="seb1073d s517f3dc">
+      <span>Crypto Market Dispatch Newsroom</span>
+      <time datetime="2026-09-11T17:38:52+00:00">Sep 11, 2026</time>
+<span>3 min read</span>    </div>
+  </header>
+  <figure class="s3159e73">
+    <img src="/assets/covers/why-syncswap-runs-four-amm-invariants.jpg" alt="Why SyncSwap Runs Four AMM Invariants" decoding="async">
+  </figure>
+  <div class="s9770c52 sb730f6d"><p>By September 11, 2026, SyncSwap supported four AMM invariants because one curve cannot price uncorrelated tokens, pegged assets and concentrated liquidity with equal efficiency. The architectural change is clear: V1 offered Classic and Stable pools, while the current protocol overview adds Aqua and Range pools behind a shared routing interface.</p>
+
+<h2>What are SyncSwap’s four AMM invariants?</h2>
+<p>They are four pricing regimes designed for different assumptions about asset correlation, trading volume and liquidity-provider involvement. The current overview from <a href="https://syncswap.dev" rel="noopener">Syncswap</a> names the models, although “four invariants” should not be read as four minor variations of one formula.</p>
+<ul>
+<li><strong>Classic:</strong> A constant-product curve, x multiplied by y equals k, provides liquidity across the full price range. It suits volatile or long-tail pairs but spreads capital thinly.</li>
+<li><strong>Stable:</strong> A hybrid curve behaves closer to constant sum around a presumed peg, then shifts toward constant product as reserves become unbalanced. Pegged pairs receive deeper effective liquidity, at the cost of relying on their correlation.</li>
+<li><strong>Aqua:</strong> A dynamic hybrid design based on the two-asset CryptoSwap model automatically concentrates liquidity around an internal price and adjusts fees as balance conditions change.</li>
+<li><strong>Range:</strong> Liquidity providers choose price bands, concentrating capital where they expect trading to occur. Positions stop earning fees when the market leaves their range and may become entirely one-sided.</li>
+</ul>
+
+<h2>The router turns model choice into execution</h2>
+<p>SyncSwap’s predecessor design asked builders to choose between a general-purpose curve and a stable-asset curve. Four models widen that choice: an issuer can seed a pegged market in Stable, a passive LP can use Aqua for automated concentration, and an active market maker can specify bands in Range. The router can compare paths across those pools, so a trader need not select the invariant manually.</p>
+<p>That modularity also raises integration costs. Quoting software must understand pool-specific math, fee behavior and liquidity states. A Range position can appear well funded while providing nothing at the current price; an Aqua quote depends on more moving parts than a Classic quote. Builders therefore gain precision but lose the simplicity of assuming every pair follows x multiplied by y equals k.</p>
+
+<h2>Who supplies liquidity, takes risk and collects fees?</h2>
+<p>Users and professional market makers supply the tokens; traders consume that inventory and pay pool-specific swap fees. Liquidity providers bear inventory loss, adverse selection and, for Range pools, the operational risk of choosing or maintaining a useful band. Traders bear price impact and execution risk when routes cross shallow pools.</p>
+<p>SyncSwap’s documentation says LPs earn trading fees, while its pool contracts also permit a configured protocol share to accrue through a fee recipient. Aqua supports dynamic fees, whereas Classic and Stable pools can use fixed settings. Because fee management is configurable, a single advertised percentage would not reliably describe every pool or deployment.</p>
+
+<h2>Four curves are useful, not automatically liquid</h2>
+<p>The practical significance is choice at the market-design layer. SyncSwap can match capital to a pair’s behavior without forcing every LP into manual range management, a meaningful advantage over a single-invariant exchange. But adding invariants does not create volume, improve token quality or guarantee that routing will find deep liquidity.</p>
+<p>The defensible verdict is that four models make SyncSwap a more capable venue for builders, provided integrations treat each pool as a distinct risk system. What remains unknown from the model descriptions alone is how liquidity is distributed among them, which models are active on every supported network, and whether Aqua’s automation outperforms actively managed Range positions after fees and rebalancing losses.</p></div>
+  <section class="scab89d1 s20987bb" aria-label="Article topics">
+    <h2>Topics in this dispatch</h2>
+    <ul>
+      <li>Trading Infrastructure</li>
+      <li>Protocol Economics</li>
+    </ul>
+  </section>
+  <section class="s9ae71ea s20987bb">
+    <h2>Related reporting</h2>
+    <ul>
+      <li><a href="/layerzero-splits-automated-from-self-relayed-messages/">LayerZero Splits Automated From Self-Relayed Messages</a></li>
+      <li><a href="/wallet-addresses-look-random-by-cryptographic-design/">Wallet Addresses Look Random by Cryptographic Design</a></li>
+      <li><a href="/how-ethereum-rollups-turn-transactions-into-batches/">How Ethereum Rollups Turn Transactions Into Batches</a></li>
+      <li><a href="/large-files-gain-a-reproducible-ipfs-root/">Large Files Gain a Reproducible IPFS Root</a></li>
+    </ul>
+  </section>
+</article>
+</main>
+
+<footer class="sff6776d">
+  <div class="s33b60c1">
+    <div class="sa54c6f6">
+      <div class="s8ef25d8">
+        <a class="s7c6342b" href="/">Crypto Market Dispatch</a>
+        <p>Independent reporting on crypto market structure.</p>
+      </div>
+      <nav class="s14ae2e7" aria-label="Publication">
+        <h2>Publication</h2>
+        <ul>
+          <li><a href="/">Start</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <nav class="s14ae2e7" aria-label="Coverage">
+        <h2>Coverage</h2>
+        <ul>
+          <li><a href="/topics/trading-infrastructure/">Trading Infrastructure</a></li>
+          <li><a href="/topics/protocol-economics/">Protocol Economics</a></li>
+          <li><a href="/topics/liquidity-and-flows/">Liquidity and Flows</a></li>
+          <li><a href="/topics/stablecoin-settlement/">Stablecoin Settlement</a></li>
+          <li><a href="/topics/dex-liquidity-and-market-maker-positioning/">DEX liquidity and market-maker positioning</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="s3d7711e">
+      <p class="s6ff7e2a">An independent outlet. Nothing here is financial advice.</p>
+      <p class="sd40d899">© 2026 Crypto Market Dispatch</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
