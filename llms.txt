@@ -1,6 +1,6 @@
-# Crypto Record
+# Crypto Readout
 
-> Crypto Record reports news on blockchain networks, exchanges, stablecoins, regulation, protocol upgrades and security incidents across the crypto industry.
+> Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide.
 
 ## Key pages
 - [Homepage](https://cryptonsu.github.io/): latest reporting and analysis.
