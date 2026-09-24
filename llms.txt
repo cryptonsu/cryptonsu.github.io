@@ -1,6 +1,6 @@
-# Web3 Today
+# Crypto Record
 
-> Web3 Today reports crypto news with technical precision: protocol upgrades, client releases, consensus changes and the parameters behind them.
+> Crypto Record reports news on blockchain networks, exchanges, stablecoins, regulation, protocol upgrades and security incidents across the crypto industry.
 
 ## Key pages
 - [Homepage](https://cryptonsu.github.io/): latest reporting and analysis.
