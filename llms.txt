@@ -1,8 +1,6 @@
-# Crypto Market Dispatch
+# Web3 Today
 
-> Daily crypto reporting on liquidity, trading infrastructure, stablecoins and protocol economics, tracing market developments to their impact on builders.
-
-Coverage: Liquidity and Flows, Trading Infrastructure, Stablecoin Settlement, Protocol Economics.
+> Web3 Today reports crypto news with technical precision: protocol upgrades, client releases, consensus changes and the parameters behind them.
 
 ## Key pages
 - [Homepage](https://cryptonsu.github.io/): latest reporting and analysis.
