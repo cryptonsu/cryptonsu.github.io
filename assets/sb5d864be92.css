@@ -1,7 +1,7 @@
 :root{
   --bg:#1a1816; --surface:#23201d; --elevated:#2c2925;
   --text:#f2eee8; --muted:#aaa398; --border:#3a3631;
-  --accent:#3385ff; --accent-ink:#0b0a09;
+  --accent:#3385ff; --accent-ink:#0b0a09; --accent-text:#3385ff;
   --font-display:"Space Grotesk", system-ui, sans-serif;
   --font-body:"Inter", system-ui, sans-serif;
   --font-mono:"Martian Mono", ui-monospace, Menlo, monospace;
@@ -35,7 +35,7 @@ p{margin:0 0 1.1em}
 .sf3971b2 > *{max-width:68ch}
 .sf3971b2 h2{font-size:1.55rem; margin-top:1.9em}
 .sf3971b2 h3{font-size:1.22rem; margin-top:1.5em}
-.sf3971b2 a{color:var(--accent); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
+.sf3971b2 a{color:var(--accent-text, var(--accent)); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
 .sf3971b2 a:hover{text-decoration-thickness:2px}
 .sf3971b2 ul,.sf3971b2 ol{padding-left:1.3em; margin:0 0 1.2em}
 .sf3971b2 li{margin:.35em 0}
