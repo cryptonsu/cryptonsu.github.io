@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idempotent Cross-Chain Retries: Four Checks | Crypto Readout</title>
+<meta name="description" content="A safe cross-chain retry preserves one message identity, records destination execution atomically and handles partial workflows without minting or spending twice.">
+<link rel="canonical" href="https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Four Checks That Make Cross-Chain Retries Idempotent">
+<meta property="og:description" content="A safe cross-chain retry preserves one message identity, records destination execution atomically and handles partial workflows without minting or spending twice.">
+<meta property="og:url" content="https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/four-checks-that-make-cross-chain-retries-idempotent-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Four Checks That Make Cross-Chain Retries Idempotent"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Four Checks That Make Cross-Chain Retries Idempotent">
+<meta name="twitter:description" content="A safe cross-chain retry preserves one message identity, records destination execution atomically and handles partial workflows without minting or spending twice.">
+<meta property="article:published_time" content="2026-09-29T23:21:53+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/#webpage",
+      "url": "https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/",
+      "name": "Idempotent Cross-Chain Retries: Four Checks | Crypto Readout",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/#article",
+      "headline": "Four Checks That Make Cross-Chain Retries Idempotent",
+      "isAccessibleForFree": true,
+      "description": "A safe cross-chain retry preserves one message identity, records destination execution atomically and handles partial workflows without minting or spending twice.",
+      "datePublished": "2026-09-29T23:21:53+00:00",
+      "dateModified": "2026-09-29T23:21:53+00:00",
+      "url": "https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 637,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/four-checks-that-make-cross-chain-retries-idempotent.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Four Checks That Make Cross-Chain Retries Idempotent",
+          "item": "https://cryptonsu.github.io/four-checks-that-make-cross-chain-retries-idempotent/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Four Checks That Make Cross-Chain Retries Idempotent</h1>
+<p class="s9db3eda">A safe cross-chain retry preserves one message identity, records destination execution atomically and handles partial workflows without minting or spending twice.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-29T23:21:53+00:00">Sep 29, 2026</time><span>3 min read</span><span>#d19dd6</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/four-checks-that-make-cross-chain-retries-idempotent.jpg" alt="Cover artwork for Four Checks That Make Cross-Chain Retries Idempotent"></figure>
+      <div class="sf3971b2"><p>Idempotent cross-chain retries use one stable message identity and destination state checks so a repeated delivery cannot repeat its effect. The source chain emits a message; a verifier or bridge authenticates it; a relayer or executor submits it on the destination; then the receiving contract changes state. Delivery can fail before execution, or execution can fail after verification. A retry should repeat the attempt, not create a second transfer or instruction.</p>
+
+<p>This distinction matters in an omnichain application, where a single user action may pass through several chains and contracts. The linked <a href="https://somber-slice-c22.notion.site/Omnichain-or-Multichain-4-Choices-After-a-Stalled-Transfer-3eabb9cee8fa802d94eddf9c7dd2e50a" rel="noopener">omnichain</a> explainer discusses the broader design choices after a stalled transfer. Here the practical question is narrower: what must the receiving application check before it acts again?</p>
+
+<h2>What makes a cross-chain retry safe?</h2>
+
+<p>A retry is safe when the destination can recognize the same authorized instruction and know whether its effect has already happened. A new transaction hash does not necessarily mean a new message: a relayer can resubmit the same payload in another transaction. The application therefore needs a message ID derived from stable fields, such as the source chain, source sender, channel nonce or sequence, and payload hash. The exact fields depend on the messaging protocol.</p>
+
+<p>Think of the ID as a parcel’s tracking number. A second delivery attempt can use a different vehicle, but it still refers to the same parcel. If the application keys its record only to the destination transaction hash, each retry can look new. If it keys only to a nonce that can repeat across senders or chains, unrelated messages can collide. The ID must identify one instruction in its full sending context.</p>
+
+<h2>Which four checks should the receiver make?</h2>
+
+<p>The receiver should validate the identity and authorization first, then guard the effect with durable state. These four checks cover the main failure points:</p>
+
+<ul>
+<li><strong>Bind the ID to the full message.</strong> Confirm the source chain, approved sender, destination, nonce or sequence, and payload. Do not let a caller reuse a valid ID with altered instructions.</li>
+<li><strong>Check whether the ID has been handled.</strong> If it is already complete, return safely without repeating the effect. If it is pending or failed, follow the contract’s defined retry path.</li>
+<li><strong>Record completion with the effect.</strong> On an EVM destination, update the processed record and perform the token transfer or state change in the same transaction. If execution reverts, both changes revert; if it succeeds, a retry sees the completed record.</li>
+<li><strong>Track each stage of a multi-step action.</strong> A message that triggers a later call, swap, or outbound message needs separate stage identifiers or a clear state machine. Completing the first stage must not falsely mark every later stage complete.</li>
+</ul>
+
+<h2>What if a workflow only partly succeeds?</h2>
+
+<p>Split workflows need explicit states because a cross-chain operation is not one atomic transaction across every chain. For example, a destination contract may accept a message and record funds before a separate contract call fails. Retrying the entire instruction without stage tracking could credit the funds again; marking the whole operation complete could strand the unfinished call.</p>
+
+<p>Store which step succeeded and give each step its own stable identity. A retry can then resume at the first incomplete step. Make state transitions narrow and check them before external calls, so reentrancy or concurrent submissions cannot pass the same guard twice. Where a later step cannot be retried safely, provide a deliberate recovery or refund path rather than treating every failure as permission to replay the whole action.</p>
+
+<p>The useful rule is simple: retries should be cheap and repeatable, while effects should be unique. For most applications, the best starting point is a stable message ID plus an atomic processed-state guard on the destination. Add per-stage tracking when the operation continues beyond that transaction. That design lets operators retry delivery without asking users to submit a second instruction.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/when-is-a-cross-chain-transfer-actually-complete/"><span class="se91a4fb">When Is a Cross-Chain Transfer Actually Complete?</span></a></li>
+        <li><a href="/how-omnichain-apps-coordinate-state-across-chains/"><span class="se91a4fb">How Omnichain Apps Coordinate State Across Chains</span></a></li>
+        <li><a href="/how-stablecoins-fund-payouts-across-networks/"><span class="se91a4fb">How Stablecoins Fund Payouts Across Networks</span></a></li>
+        <li><a href="/how-exchange-liquidity-shapes-cross-chain-routes/"><span class="se91a4fb">How Exchange Liquidity Shapes Cross-Chain Routes</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
