@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transfer-Tax Tokens and Swap Quotes Explained</title>
+<meta name="description" content="Transfer taxes can make an AMM quote differ from what reaches a wallet; the gap depends on where the token charges and how the router measures output.">
+<link rel="canonical" href="https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Transfer Taxes Change a Token Swap Quote">
+<meta property="og:description" content="Transfer taxes can make an AMM quote differ from what reaches a wallet; the gap depends on where the token charges and how the router measures output.">
+<meta property="og:url" content="https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/why-transfer-taxes-change-a-token-swap-quote-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Transfer Taxes Change a Token Swap Quote"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Transfer Taxes Change a Token Swap Quote">
+<meta name="twitter:description" content="Transfer taxes can make an AMM quote differ from what reaches a wallet; the gap depends on where the token charges and how the router measures output.">
+<meta property="article:published_time" content="2026-09-29T21:30:45+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/#webpage",
+      "url": "https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/",
+      "name": "Transfer-Tax Tokens and Swap Quotes Explained",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/#article",
+      "headline": "Why Transfer Taxes Change a Token Swap Quote",
+      "isAccessibleForFree": true,
+      "description": "Transfer taxes can make an AMM quote differ from what reaches a wallet; the gap depends on where the token charges and how the router measures output.",
+      "datePublished": "2026-09-29T21:30:45+00:00",
+      "dateModified": "2026-09-29T21:30:45+00:00",
+      "url": "https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 636,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/why-transfer-taxes-change-a-token-swap-quote.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Transfer Taxes Change a Token Swap Quote",
+          "item": "https://cryptonsu.github.io/why-transfer-taxes-change-a-token-swap-quote/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Why Transfer Taxes Change a Token Swap Quote</h1>
+<p class="s9db3eda">Transfer taxes can make an AMM quote differ from what reaches a wallet; the gap depends on where the token charges and how the router measures output.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-29T21:30:45+00:00">Sep 29, 2026</time><span>3 min read</span><span>#522eb2</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/why-transfer-taxes-change-a-token-swap-quote.jpg" alt="Cover artwork for Why Transfer Taxes Change a Token Swap Quote"></figure>
+      <div class="sf3971b2"><p>A transfer-tax token can make the amount shown in a swap quote differ from the amount a wallet receives because the token may deduct a fee as it moves. The pool’s reserves determine the trade’s starting price, but the token contract can change how many units reach the pool or the buyer. The quote is an estimate of a trade through the pool, not a guarantee of the recipient’s final balance.</p>
+
+<p>In a typical automated market maker, a trader sends one token to a pool and receives another. The pool’s reserves and pricing rule determine the expected output; a router turns that estimate into a transaction. A transfer-tax token adds another step: its contract may withhold part of a transfer, send it elsewhere, or burn it. For a walkthrough of the charting and swap context, see <a href="https://telegra.ph/How-to-Use-PooCoin-for-BSC-Charts-Wallets-and-Swaps-09-29" rel="noopener">Poocoin</a>. The key detail is which transfer the token taxes.</p>
+
+<h2>Where does the tax enter a swap?</h2>
+
+<p>The tax enters when the token contract processes a transfer, so its effect depends on whether the token is being sold into the pool or bought out of it. On a sale, the trader’s transfer may be taxed before the pool receives the tokens. The pool then has less input than the trader sent, which can reduce the other token’s output. On a purchase, the pool may send the quoted amount but the token contract can deduct a fee before the buyer receives it.</p>
+
+<p>Some contracts charge on both transfers; others exempt certain addresses or apply different rates by transaction type. The contract’s rules decide. A quote screen may use a standard reserve-based formula that does not account for those rules. A more specialized router or interface may estimate the net amount by simulating the transfer, but behavior can still depend on the token’s current settings.</p>
+
+<h2>Why can the quoted amount differ from the received amount?</h2>
+
+<p>The quoted amount can differ because the pool calculation and the token transfer calculation are separate. Think of the pool quote as weighing goods before a shop applies a handling charge: the displayed weight is useful, but it is not the final amount in the bag. In a swap, the router’s estimate may describe what the pool sends, while the wallet balance reflects what remains after the token’s transfer rule runs.</p>
+
+<p>Before confirming, compare the quote with the transaction’s minimum received amount and check whether the interface identifies a transfer fee. The minimum is a lower bound for execution, not a promise that the token contract will be predictable in every state. Slippage tolerance allows some price movement between quote and execution; it does not remove a transfer tax. A high tolerance may let a worse trade proceed, so raising it to force a transaction through can increase the cost.</p>
+
+<h2>What should a trader check before swapping?</h2>
+
+<p>Check the expected net receipt, the applicable tax, and the route before signing. A route can involve multiple pools, and a tax may apply at each transfer involving the token. If the displayed output looks much larger than the wallet’s expected receipt, pause and inspect the transaction details or token rules. A failed transaction can still consume network fees, while a successful one can deliver less than a simple pool quote suggested.</p>
+
+<ul>
+<li>Confirm whether the token taxes buys, sells, or both.</li>
+<li>Look for an estimate of the amount that reaches the wallet, not only the pool output.</li>
+<li>Keep slippage tolerance close to what the trade needs.</li>
+<li>Check the final transaction details before signing.</li>
+</ul>
+
+<p>The practical distinction is simple: the pool sets the swap price, while the token contract can change the transferred amount. For most traders, the better quote is the one that estimates the net receipt and explains its assumptions. When no such estimate is available, a displayed pool output alone is not enough to judge the trade.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/what-bridge-address-compatibility-checks-before-a-transfer/"><span class="se91a4fb">What Bridge Address Compatibility Checks Before a Transfer</span></a></li>
+        <li><a href="/how-an-ethereum-deposit-becomes-a-valid-bridge-message/"><span class="se91a4fb">How an Ethereum deposit becomes a valid bridge message</span></a></li>
+        <li><a href="/mantle-bridge-routes-choosing-a-transfer-path/"><span class="se91a4fb">Mantle Bridge routes: choosing a transfer path</span></a></li>
+        <li><a href="/how-bridge-proof-verification-checks-a-cross-chain-transfer/"><span class="se91a4fb">How Bridge Proof Verification Checks a Cross-Chain Transfer</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
