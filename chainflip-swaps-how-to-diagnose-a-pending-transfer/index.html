@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chainflip pending swap: diagnose each transfer stage</title>
+<meta name="description" content="A pending swap can mean the deposit is confirming, awaiting validator witnessing, waiting for execution, or queued for payout; trace the stage before acting.">
+<link rel="canonical" href="https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Chainflip swaps: how to diagnose a pending transfer">
+<meta property="og:description" content="A pending swap can mean the deposit is confirming, awaiting validator witnessing, waiting for execution, or queued for payout; trace the stage before acting.">
+<meta property="og:url" content="https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/chainflip-swaps-how-to-diagnose-a-pending-transfer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chainflip swaps: how to diagnose a pending transfer"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chainflip swaps: how to diagnose a pending transfer">
+<meta name="twitter:description" content="A pending swap can mean the deposit is confirming, awaiting validator witnessing, waiting for execution, or queued for payout; trace the stage before acting.">
+<meta property="article:published_time" content="2026-09-29T18:06:45+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/#webpage",
+      "url": "https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/",
+      "name": "Chainflip pending swap: diagnose each transfer stage",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/#article",
+      "headline": "Chainflip swaps: how to diagnose a pending transfer",
+      "isAccessibleForFree": true,
+      "description": "A pending swap can mean the deposit is confirming, awaiting validator witnessing, waiting for execution, or queued for payout; trace the stage before acting.",
+      "datePublished": "2026-09-29T18:06:45+00:00",
+      "dateModified": "2026-09-29T18:06:45+00:00",
+      "url": "https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 608,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/chainflip-swaps-how-to-diagnose-a-pending-transfer.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Chainflip swaps: how to diagnose a pending transfer",
+          "item": "https://cryptonsu.github.io/chainflip-swaps-how-to-diagnose-a-pending-transfer/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Chainflip swaps: how to diagnose a pending transfer</h1>
+<p class="s9db3eda">A pending swap can mean the deposit is confirming, awaiting validator witnessing, waiting for execution, or queued for payout; trace the stage before acting.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-29T18:06:45+00:00">Sep 29, 2026</time><span>3 min read</span><span>#0c2abd</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/chainflip-swaps-how-to-diagnose-a-pending-transfer.jpg" alt="Cover artwork for Chainflip swaps: how to diagnose a pending transfer"></figure>
+      <div class="sf3971b2"><p>A pending Chainflip swap is a transfer moving through separate source-chain, validator, State Chain, and destination-chain steps. First, your wallet broadcasts the deposit on the source chain; then validators watch for it and record it on Chainflip’s State Chain after the required confirmation process. The State Chain executes the swap, and validators arrange a separate payout to your destination address. Each step has its own transaction record, so “pending” alone does not say where the delay is.</p>
+
+<h2>What does each pending swap stage mean?</h2>
+
+<p>The stage shown by the tracker tells you which transaction to inspect. If it is waiting for a deposit, check the source-chain transaction hash in that chain’s block explorer: a wallet may show a transfer as submitted while it is still unconfirmed. Once confirmed, the deposit still needs to be detected and witnessed by validators before the State Chain records it. Bitcoin deposits can take longer to reach this point than deposits on faster chains because confirmation rules differ.</p>
+
+<p>The tracker and the source-chain explorer answer different questions. The explorer shows whether the deposit transaction was included and confirmed; the swap tracker shows whether the protocol has registered and processed it. For a fuller account of how routes affect the swap, see this <a href="https://elegant-bayberry-652.notion.site/Chainflip-How-to-Choose-a-Route-for-Native-Crypto-Swaps-3eaa34834c63806b84ffebdd6e25306b" rel="noopener">chainflip</a> reference. Keep the source transaction hash and swap ID: one identifies the deposit, the other helps locate the swap’s later steps.</p>
+
+<h2>Why can a confirmed deposit still be pending?</h2>
+
+<p>A confirmed deposit is not the same as a completed swap. Validators must agree that the deposit is valid and register it on the State Chain. The State Chain then applies the swap route through its available liquidity. If the route crosses more than one pool, the protocol processes those pool swaps in sequence. A tracker that has not advanced may therefore point to witnessing or execution, rather than a problem with the wallet transaction.</p>
+
+<p>Execution can also depend on the protections set when the swap was opened. A minimum price or other supported slippage limit can prevent execution at an unacceptable rate. If the swap cannot meet its conditions within its configured retry period, the protocol can send a refund to the refund address specified for that swap. A refund is a separate transaction, so it may need time to appear on the source chain.</p>
+
+<h2>What should you check before taking action?</h2>
+
+<p>Match the tracker details against the transfer you made before sending anything else. Check these points:</p>
+
+<ul>
+<li>Confirm the source transaction succeeded on the correct chain, and note its hash.</li>
+<li>Compare the deposit address, asset, and amount with the swap details.</li>
+<li>Check whether the tracker shows deposit detection, swap execution, payout, or refund.</li>
+<li>Verify the destination address and look for a separate payout transaction on its chain.</li>
+</ul>
+
+<p>A deposit channel is temporary; Chainflip’s documentation says channels close after 24 hours. If a deposit was sent to an expired channel, or the asset or address does not match the swap, do not assume the tracker will resolve it automatically. Preserve the swap ID and transaction hashes, then use the publication or service’s official support route. Never share a recovery phrase or sign an unrelated transaction to “release” a pending swap.</p>
+
+<h2>What does a pending payout mean?</h2>
+
+<p>If the swap has executed but the payout is pending, the output transaction has not yet completed on the destination chain. Egress, Chainflip’s process for sending assets out, can batch transfers before validators sign and broadcast them. Check the tracker for a payout transaction hash; once it exists, use the destination chain’s explorer to see whether it is confirmed. The practical rule is simple: identify the stage first, then follow that stage’s transaction record.</div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/what-a-cross-chain-swap-costs-before-the-tokens-arrive/"><span class="se91a4fb">What a Cross-Chain Swap Costs Before the Tokens Arrive</span></a></li>
+        <li><a href="/how-lps-can-measure-correlated-asset-depeg-exposure/"><span class="se91a4fb">How LPs Can Measure Correlated-Asset Depeg Exposure</span></a></li>
+        <li><a href="/what-a-solana-swap-signature-authorizes/"><span class="se91a4fb">What a Solana Swap Signature Authorizes</span></a></li>
+        <li><a href="/byreal-when-to-swap-and-when-to-supply-liquidity/"><span class="se91a4fb">Byreal: When to Swap and When to Supply Liquidity</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
