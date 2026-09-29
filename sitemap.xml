@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://cryptonsu.github.io/</loc><lastmod>2026-09-29</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptonsu.github.io/how-base-swap-trading-and-liquidity-work-on-base/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/how-cryptographic-precompiles-use-energy/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/why-tron-energy-takes-time-to-reach-your-wallet/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/estimating-energy-for-a-usdt-trc-20-transfer/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -14,4 +15,5 @@
 <url><loc>https://cryptonsu.github.io/archive/</loc><priority>0.3</priority></url>
 <url><loc>https://cryptonsu.github.io/about/</loc><priority>0.3</priority></url>
 <url><loc>https://cryptonsu.github.io/privacy/</loc><priority>0.3</priority></url>
+<url><loc>https://cryptonsu.github.io/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
