@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XMR Bridge Reconciliation for Treasury Teams</title>
+<meta name="description" content="XMR bridge reconciliation joins private Monero deposits to destination-chain releases through wallet records, transfer references and explicit exception handling.">
+<link rel="canonical" href="https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Treasury Teams Reconcile XMR Bridge Transfers">
+<meta property="og:description" content="XMR bridge reconciliation joins private Monero deposits to destination-chain releases through wallet records, transfer references and explicit exception handling.">
+<meta property="og:url" content="https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/how-treasury-teams-reconcile-xmr-bridge-transfers-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Treasury Teams Reconcile XMR Bridge Transfers"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Treasury Teams Reconcile XMR Bridge Transfers">
+<meta name="twitter:description" content="XMR bridge reconciliation joins private Monero deposits to destination-chain releases through wallet records, transfer references and explicit exception handling.">
+<meta property="article:published_time" content="2026-09-30T01:04:28+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/#webpage",
+      "url": "https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/",
+      "name": "XMR Bridge Reconciliation for Treasury Teams",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/#article",
+      "headline": "How Treasury Teams Reconcile XMR Bridge Transfers",
+      "isAccessibleForFree": true,
+      "description": "XMR bridge reconciliation joins private Monero deposits to destination-chain releases through wallet records, transfer references and explicit exception handling.",
+      "datePublished": "2026-09-30T01:04:28+00:00",
+      "dateModified": "2026-09-30T01:04:28+00:00",
+      "url": "https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 577,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/how-treasury-teams-reconcile-xmr-bridge-transfers.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Treasury Teams Reconcile XMR Bridge Transfers",
+          "item": "https://cryptonsu.github.io/how-treasury-teams-reconcile-xmr-bridge-transfers/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">How Treasury Teams Reconcile XMR Bridge Transfers</h1>
+<p class="s9db3eda">XMR bridge reconciliation joins private Monero deposits to destination-chain releases through wallet records, transfer references and explicit exception handling.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-30T01:04:28+00:00">Sep 30, 2026</time><span>3 min read</span><span>#376fdf</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/how-treasury-teams-reconcile-xmr-bridge-transfers.jpg" alt="Cover artwork for How Treasury Teams Reconcile XMR Bridge Transfers"></figure>
+      <div class="sf3971b2"><p>XMR bridge reconciliation links a private Monero deposit to the corresponding release on another network by matching the bridge’s records, not by expecting public transaction details to show the full transfer. First, the sender submits XMR to an address or wallet controlled by the bridge. The bridge detects the deposit, waits for its required confirmation process, then releases an asset or payment on the destination chain. On the return path, the bridge may receive or burn that asset before sending XMR back. The exact steps depend on the bridge’s design, so treasury teams need its transfer records alongside both chains’ transaction data.</p>
+
+<h2>Why can’t the public ledger match an XMR transfer by amount?</h2>
+<p>Monero’s privacy features conceal transaction amounts and obscure the link between a sender and a particular output. A transaction ID can identify a transaction, but it does not provide the same public amount-and-address trail a team might use on a transparent chain. The bridge operator may have additional records that connect a deposit to a transfer request; the public ledger alone may not let a treasury analyst prove that match. Reconciliation therefore starts with the bridge’s reference for the request and the records available to the treasury, then checks that the related chain events occurred.</p>
+<p>Keep the transfer reference, requested amount, asset, destination, timestamps and status together in the treasury record. Add the Monero transaction ID when the bridge or wallet provides it, and record the destination-chain transaction ID when the release occurs. For a stalled transfer, the recovery steps depend on the bridge and its status records; <a href="https://newscryptoworld.github.io/how-to-use-zerofi-when-an-xmr-transfer-stalls/" rel="noopener">zerofi</a> covers that path in more detail. A reference number is useful for investigation, but it is not proof that a deposit settled.</p>
+
+<h2>What records should treasury teams compare?</h2>
+<p>Compare the request, the bridge’s receipt or processing record, and the resulting destination-chain event. Each answers a different question: what was intended, what the bridge recognized, and what was actually released. Reconcile the records in that order, and preserve the original values rather than overwriting them when a transfer is corrected.</p>
+<ul>
+<li><strong>Request:</strong> transfer reference, requested XMR amount, destination asset and destination address.</li>
+<li><strong>Monero side:</strong> transaction ID, wallet or bridge receipt record, and the bridge’s recorded amount and status.</li>
+<li><strong>Destination side:</strong> transaction ID, released asset and amount, receiving address, and confirmation status.</li>
+<li><strong>Exception record:</strong> any mismatch, investigation note, adjustment and final disposition, linked to the same transfer reference.</li>
+</ul>
+<p>Where the bridge gives each request a distinct deposit route, that route can help identify the request in its records. It does not make the Monero amount publicly visible. Teams should also avoid treating a destination-chain release as proof that the expected Monero deposit was received unless the bridge’s records connect the two.</p>
+
+<h2>How should a team handle mismatches?</h2>
+<p>Classify the mismatch before changing a ledger entry: the deposit may be unrecognized, still processing, recorded at a different amount, or matched to a release that has not completed. Check the bridge status and supporting records, then ask the bridge operator to resolve cases that cannot be established from treasury-held data. Keep pending transfers separate from settled balances, and document any fee or adjustment against the original reference.</p>
+<p>For most treasury teams, the sound approach is a three-way match: request, bridge record and destination event. It accepts that Monero’s public ledger has limited visibility while still requiring evidence for every settlement. The result is a clear audit trail of what was requested, what the bridge processed and what reached the destination.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/the-state-machine-behind-a-monero-bridge-deposit/"><span class="se91a4fb">The State Machine Behind a Monero Bridge Deposit</span></a></li>
+        <li><a href="/how-zerofi-turns-monero-into-zxmr-on-sepolia/"><span class="se91a4fb">How zerofi turns Monero into zXMR on Sepolia</span></a></li>
+        <li><a href="/choose-a-usdc-route-by-checking-the-destination-first/"><span class="se91a4fb">Choose a USDC Route by Checking the Destination First</span></a></li>
+        <li><a href="/pay-a-polygon-invoice-by-matching-the-network-token-and-address/"><span class="se91a4fb">Pay a Polygon Invoice by Matching the Network, Token and Address</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
