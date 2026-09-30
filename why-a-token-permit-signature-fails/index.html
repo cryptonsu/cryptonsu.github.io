@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token permit signature failures, explained | Crypto Readout</title>
+<meta name="description" content="A permit fails when its signed fields, nonce, deadline or token domain do not match the contract’s checks; compare those inputs before signing again on the same chain.">
+<link rel="canonical" href="https://cryptonsu.github.io/why-a-token-permit-signature-fails/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a token permit signature fails">
+<meta property="og:description" content="A permit fails when its signed fields, nonce, deadline or token domain do not match the contract’s checks; compare those inputs before signing again on the same chain.">
+<meta property="og:url" content="https://cryptonsu.github.io/why-a-token-permit-signature-fails/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/why-a-token-permit-signature-fails-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a token permit signature fails"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a token permit signature fails">
+<meta name="twitter:description" content="A permit fails when its signed fields, nonce, deadline or token domain do not match the contract’s checks; compare those inputs before signing again on the same chain.">
+<meta property="article:published_time" content="2026-09-30T16:00:53+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/why-a-token-permit-signature-fails/#webpage",
+      "url": "https://cryptonsu.github.io/why-a-token-permit-signature-fails/",
+      "name": "Token permit signature failures, explained | Crypto Readout",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/why-a-token-permit-signature-fails/#article",
+      "headline": "Why a token permit signature fails",
+      "isAccessibleForFree": true,
+      "description": "A permit fails when its signed fields, nonce, deadline or token domain do not match the contract’s checks; compare those inputs before signing again on the same chain.",
+      "datePublished": "2026-09-30T16:00:53+00:00",
+      "dateModified": "2026-09-30T16:00:53+00:00",
+      "url": "https://cryptonsu.github.io/why-a-token-permit-signature-fails/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/why-a-token-permit-signature-fails/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 617,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/why-a-token-permit-signature-fails.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a token permit signature fails",
+          "item": "https://cryptonsu.github.io/why-a-token-permit-signature-fails/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Why a token permit signature fails</h1>
+<p class="s9db3eda">A permit fails when its signed fields, nonce, deadline or token domain do not match the contract’s checks; compare those inputs before signing again on the same chain.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-30T16:00:53+00:00">Sep 30, 2026</time><span>3 min read</span><span>#bb717f</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/why-a-token-permit-signature-fails.jpg" alt="Cover artwork for Why a token permit signature fails"></figure>
+      <div class="sf3971b2"><p>A token permit signature fails when the token contract cannot recover the owner from a signature that matches its required fields and current state. The wallet first signs a typed message; a caller submits it to the token contract; the contract checks the message, verifies the signer, then records an allowance and advances the owner’s nonce. A mismatch at any of those checks makes the permit call revert.</p>
+
+<h2>What does a permit signature approve?</h2>
+<p>Under the common ERC-2612 pattern, the signed message names the token owner, spender, allowance value, nonce and deadline. Its EIP-712 domain also identifies the token contract and chain. The wallet signs this structured data off-chain, so the owner does not need to send the approval transaction themselves. A relayer or application can submit the signature, but the token contract still decides whether it is valid.</p>
+<p>This lets an application combine an approval with a later action, such as a token swap, instead of asking for a separate on-chain approval first. For the separate question of how a Base swap handles token trades and liquidity, see <a href="https://dev.to/jerome_barton/base-swap-explained-token-trades-liquidity-and-getting-started-g1d" rel="noopener">how a Base swap routes token trades</a>. A permit grants an allowance; it does not itself move tokens or guarantee that the swap will succeed.</p>
+
+<h2>Which checks make a permit revert?</h2>
+<p>The contract compares the submitted signature with the exact data it expects. A correct-looking signature can still fail if one field changed after signing or if the wallet used a different domain. The main checks are:</p>
+<ul>
+<li><strong>Owner and signer:</strong> the recovered signing address must be the stated owner, which cannot be the zero address.</li>
+<li><strong>Spender and value:</strong> both must match the signed message exactly. A changed spender or allowance means a different approval.</li>
+<li><strong>Nonce:</strong> the signed nonce must equal the owner’s current nonce. A previously used signature is stale because a successful permit advances that nonce.</li>
+<li><strong>Deadline and domain:</strong> the deadline must not have passed, and the token contract and chain must match the domain used to sign.</li>
+</ul>
+<p>The domain is like the address on a letter: it helps bind the signature to its intended destination. A signature for one token contract or chain should not be treated as an approval for another.</p>
+
+<h2>How can you diagnose a failed permit?</h2>
+<p>Start with the token’s actual permit implementation. ERC-2612 is common, but contracts may use a different permit format, field name or signature convention. A wallet or application that builds the wrong message cannot produce a signature the contract will accept, even if the wallet reports that signing succeeded.</p>
+<p>Then compare the signed owner, spender, value, nonce, deadline, chain ID and verifying contract with the values being submitted. Check the owner’s current nonce on the token contract: another successful permit can invalidate an older signature. If the deadline has expired, request a fresh signature with a valid deadline. If the domain or message fields differ, reconnect to the intended chain and have the application build the message again from the correct token address.</p>
+
+<h2>What should you do before signing again?</h2>
+<p>Confirm that the token supports the permit method the application is requesting, and inspect the wallet prompt for the spender and allowance. Do not sign a message whose purpose or spender is unclear. For a repeatable failure, capture the token address, chain, revert reason and submitted fields; those details help distinguish a stale nonce from a wrong domain or incompatible permit format.</p>
+<p>A failed permit does not create the allowance through that call. The practical fix is to correct the mismatched input or use the token’s supported approval path. When the fields, domain, nonce and deadline all line up, the permit can set the allowance; the application still has to submit the later action that uses it.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/four-checks-for-pool-depth-before-a-thin-token-swap/"><span class="se91a4fb">Four Checks for Pool Depth Before a Thin Token Swap</span></a></li>
+        <li><a href="/a-cross-chain-timeout-can-end-before-your-funds-return/"><span class="se91a4fb">A Cross-Chain Timeout Can End Before Your Funds Return</span></a></li>
+        <li><a href="/why-a-test-transfer-finds-cross-chain-mistakes/"><span class="se91a4fb">Why a Test Transfer Finds Cross-Chain Mistakes</span></a></li>
+        <li><a href="/set-a-minimum-for-a-cross-chain-swap/"><span class="se91a4fb">Set a Minimum for a Cross-Chain Swap</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
