@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERC-20 Allowances for Bridge Deposits Explained</title>
+<meta name="description" content="An ERC-20 approval lets a bridge contract move a set amount of tokens; the deposit call then starts the bridge’s separate source-chain and destination-chain steps.">
+<link rel="canonical" href="https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="ERC-20 Allowances: The Approval Behind a Bridge Deposit">
+<meta property="og:description" content="An ERC-20 approval lets a bridge contract move a set amount of tokens; the deposit call then starts the bridge’s separate source-chain and destination-chain steps.">
+<meta property="og:url" content="https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/erc-20-allowances-the-approval-behind-a-bridge-deposit-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ERC-20 Allowances: The Approval Behind a Bridge Deposit"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ERC-20 Allowances: The Approval Behind a Bridge Deposit">
+<meta name="twitter:description" content="An ERC-20 approval lets a bridge contract move a set amount of tokens; the deposit call then starts the bridge’s separate source-chain and destination-chain steps.">
+<meta property="article:published_time" content="2026-09-30T13:13:15+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/#webpage",
+      "url": "https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/",
+      "name": "ERC-20 Allowances for Bridge Deposits Explained",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/#article",
+      "headline": "ERC-20 Allowances: The Approval Behind a Bridge Deposit",
+      "isAccessibleForFree": true,
+      "description": "An ERC-20 approval lets a bridge contract move a set amount of tokens; the deposit call then starts the bridge’s separate source-chain and destination-chain steps.",
+      "datePublished": "2026-09-30T13:13:15+00:00",
+      "dateModified": "2026-09-30T13:13:15+00:00",
+      "url": "https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 589,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/erc-20-allowances-the-approval-behind-a-bridge-deposit.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ERC-20 Allowances: The Approval Behind a Bridge Deposit",
+          "item": "https://cryptonsu.github.io/erc-20-allowances-the-approval-behind-a-bridge-deposit/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">ERC-20 Allowances: The Approval Behind a Bridge Deposit</h1>
+<p class="s9db3eda">An ERC-20 approval lets a bridge contract move a set amount of tokens; the deposit call then starts the bridge’s separate source-chain and destination-chain steps.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-30T13:13:15+00:00">Sep 30, 2026</time><span>3 min read</span><span>#0eb9ae</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/erc-20-allowances-the-approval-behind-a-bridge-deposit.jpg" alt="Cover artwork for ERC-20 Allowances: The Approval Behind a Bridge Deposit"></figure>
+      <div class="sf3971b2"><p>An ERC-20 allowance gives a named contract permission to move up to a set amount of your tokens; it does not make the bridge deposit by itself. First, your wallet sends an <code>approve</code> transaction to the token contract, naming the bridge’s spender address and amount. Once that approval is recorded, you submit a separate deposit transaction to the bridge. The <a href="https://lulutzbs507276.win-blog.com/24418434/polygon-bridge-deposits-when-funds-arrive-on-polygon-pos" rel="noopener">Polygon Bridge</a> follows this general pattern; a fuller account explains when funds arrive on Polygon PoS.</p>
+
+<h2>What does an ERC-20 allowance let a bridge do?</h2>
+<p>An allowance lets one address spend a limited amount of a token from your address. In the approval transaction, the token contract records your wallet as the owner, the bridge contract as the spender, and the approved amount. The allowance applies to that token and spender pair; approving one token does not approve another, and approving one contract does not approve every contract associated with a bridge.</p>
+<p>Think of it as permission to use a specified amount from an account, rather than handing over the account itself. The bridge can call the token’s <code>transferFrom</code> function to take tokens from your wallet, but only within the allowance and subject to your balance. The approval transaction changes that permission. It does not transfer tokens to the bridge or start a deposit.</p>
+
+<h2>Why does a bridge deposit often need two transactions?</h2>
+<p>The bridge needs permission before it can collect tokens from your wallet. That is why a standard deposit can have two on-chain steps:</p>
+<ul>
+<li><strong>Approve:</strong> The wallet calls the token contract’s <code>approve</code> function with the bridge spender and an amount.</li>
+<li><strong>Deposit:</strong> The wallet calls the bridge contract, which uses <code>transferFrom</code> to collect the tokens.</li>
+<li><strong>Bridge processing:</strong> The bridge’s source-chain process records the deposit. A separate process then makes the corresponding funds available on the destination chain, according to that bridge’s design.</li>
+</ul>
+<p>Each transaction needs its own confirmation and incurs a network fee on the chain where it is sent. Some tokens and bridges support signed approvals, such as permit flows, that can reduce the number of wallet transactions. That option depends on both contracts supporting it; it is not a feature of every ERC-20 deposit.</p>
+
+<h2>How much allowance should you approve?</h2>
+<p>For a one-off deposit, approving the amount you intend to deposit usually limits the permission to what the bridge needs for that call. Some interfaces request a much larger allowance so later deposits can skip the approval step. That saves a transaction, but it leaves the spender with permission to move more tokens while the allowance remains active.</p>
+<p>An approval sets the allowance to the requested value; it does not add that value to an existing allowance. If you change an allowance, check the value shown in your wallet. The ERC-20 standard also advises interfaces to set an existing allowance to zero before changing it to another non-zero value, a pattern some token contracts require.</p>
+
+<h2>What should you check before approving?</h2>
+<p>Check the token, spender address, and amount in the wallet prompt. The spender should be the bridge contract used for the deposit, and the amount should match the permission you mean to grant. Afterward, the allowance can remain even if you leave the bridge site or never submit the deposit. If you no longer need it, you can set it to zero through a compatible wallet or token interface.</p>
+<p>The key distinction is simple: approval authorizes token movement; the deposit call requests it. Keeping those steps separate makes it easier to see what permission you are granting and when the bridge actually receives your tokens.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/schedule-polygon-pos-exits-by-separating-the-burn-from-the-claim/"><span class="se91a4fb">Schedule Polygon PoS exits by separating the burn from the claim</span></a></li>
+        <li><a href="/four-decisions-that-make-cross-chain-rate-limits-work/"><span class="se91a4fb">Four Decisions That Make Cross-Chain Rate Limits Work</span></a></li>
+        <li><a href="/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/"><span class="se91a4fb">Why a Source Reorg Cannot Roll Back Every Omnichain Transfer</span></a></li>
+        <li><a href="/omnichain-message-schemas-the-fields-to-check-before-bridging/"><span class="se91a4fb">Omnichain Message Schemas: The Fields to Check Before Bridging</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
