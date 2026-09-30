@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monero Bridge Deposits: Integrator State Machine</title>
+<meta name="description" content="A Monero deposit monitor must reconcile wallet scans, chain inclusion and confirmation policy before it triggers the bridge’s next step or marks funds available.">
+<link rel="canonical" href="https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="The State Machine Behind a Monero Bridge Deposit">
+<meta property="og:description" content="A Monero deposit monitor must reconcile wallet scans, chain inclusion and confirmation policy before it triggers the bridge’s next step or marks funds available.">
+<meta property="og:url" content="https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/the-state-machine-behind-a-monero-bridge-deposit-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The State Machine Behind a Monero Bridge Deposit"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The State Machine Behind a Monero Bridge Deposit">
+<meta name="twitter:description" content="A Monero deposit monitor must reconcile wallet scans, chain inclusion and confirmation policy before it triggers the bridge’s next step or marks funds available.">
+<meta property="article:published_time" content="2026-09-30T00:55:48+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/#webpage",
+      "url": "https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/",
+      "name": "Monero Bridge Deposits: Integrator State Machine",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/#article",
+      "headline": "The State Machine Behind a Monero Bridge Deposit",
+      "isAccessibleForFree": true,
+      "description": "A Monero deposit monitor must reconcile wallet scans, chain inclusion and confirmation policy before it triggers the bridge’s next step or marks funds available.",
+      "datePublished": "2026-09-30T00:55:48+00:00",
+      "dateModified": "2026-09-30T00:55:48+00:00",
+      "url": "https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 593,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/the-state-machine-behind-a-monero-bridge-deposit.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The State Machine Behind a Monero Bridge Deposit",
+          "item": "https://cryptonsu.github.io/the-state-machine-behind-a-monero-bridge-deposit/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">The State Machine Behind a Monero Bridge Deposit</h1>
+<p class="s9db3eda">A Monero deposit monitor must reconcile wallet scans, chain inclusion and confirmation policy before it triggers the bridge’s next step or marks funds available.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-30T00:55:48+00:00">Sep 30, 2026</time><span>3 min read</span><span>#855b6d</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/the-state-machine-behind-a-monero-bridge-deposit.jpg" alt="Cover artwork for The State Machine Behind a Monero Bridge Deposit"></figure>
+      <div class="sf3971b2"><p>A Monero bridge deposit is an observed XMR transfer that an integrator advances through explicit states before the bridge acts on it. The monitor watches a wallet or address, the wallet detects incoming outputs, and the integrator decides when the evidence is strong enough to trigger the next step. Each transition needs a rule and a record.</p>
+
+<p>Start by creating a deposit intent: the expected destination, asset, amount rules, expiry and the identifier the user will later use to check status. Monero hides amounts and recipient details from ordinary blockchain observers, so the service needs wallet access that can detect the relevant incoming transfer. A transaction hash alone does not prove that this deposit belongs to this intent or that the amount is correct. For the Monero-to-Sepolia route, <a href="https://telegra.ph/ZeroFi-2026-How-to-Bridge-Monero-to-Sepolia-09-30" rel="noopener">zerofi</a> gives the fuller walkthrough; the state machine here focuses on how an integrator tracks the deposit.</p>
+
+<h2>How does an integrator detect a Monero deposit?</h2>
+
+<p>The wallet scan connects an incoming output to the deposit intent; the chain monitor establishes whether the transaction is still pending or has been included in a block. These are separate observations. A transaction seen in the pool may disappear or be replaced before inclusion, so it should not count as settled funds.</p>
+
+<p>Record the intent before displaying a deposit destination, then associate each wallet observation with that intent. If the service uses a distinct subaddress for each deposit, it can map the detected payment directly. If it reuses a destination, it needs another reliable way to distinguish payments. In either case, the wallet must verify the amount and destination details it can observe. A payment that is short, late or ambiguous should enter an exception state instead of silently matching.</p>
+
+<h2>Which states should a bridge deposit pass through?</h2>
+
+<p>A useful state machine separates detection from credit. One practical sequence is <strong>created</strong>, <strong>watching</strong>, <strong>seen</strong>, <strong>confirmed</strong>, then <strong>credited</strong> or <strong>exception</strong>. The service stores the transaction identifier, detected amount, block information and each transition time. A retry should update the existing record, not create a second deposit.</p>
+
+<ul>
+<li><strong>Created:</strong> the deposit intent and its expiry are stored.</li>
+<li><strong>Watching:</strong> the wallet scan is active; no payment has been detected.</li>
+<li><strong>Seen:</strong> an incoming payment is detected, but it may still be unconfirmed.</li>
+<li><strong>Confirmed or exception:</strong> the confirmation policy is met, or a mismatch needs review.</li>
+</ul>
+
+<p>The confirmation policy is a bridge rule, not a property of the transaction hash. It says how much chain inclusion the service requires before it acts. The right threshold depends on the value at risk and the bridge’s recovery design. If a transaction is reorganized out before the policy is met, return it to watching; if it had already triggered an irreversible destination action, the incident needs a separate recovery path.</p>
+
+<h2>When should a bridge act on a deposit?</h2>
+
+<p>Only after the deposit satisfies the configured policy should the integrator send the bridge’s next command, such as authorizing a destination-chain release or mint when that is how the bridge is designed. Treat that command as its own state, with an idempotency key and a recorded result. If the destination transaction times out, check whether it succeeded before retrying; otherwise one Monero deposit could trigger duplicate actions.</p>
+
+<p>Operators should expose a status that distinguishes “payment detected” from “funds credited.” That wording tells the user what the system has actually verified. Keep the deposit record and destination action linked, alert on stalled transitions, and route underpayments, expired intents and uncertain matches to explicit handling. The core rule is simple: observe first, confirm by policy, then act once.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/how-zerofi-turns-monero-into-zxmr-on-sepolia/"><span class="se91a4fb">How zerofi turns Monero into zXMR on Sepolia</span></a></li>
+        <li><a href="/choose-a-usdc-route-by-checking-the-destination-first/"><span class="se91a4fb">Choose a USDC Route by Checking the Destination First</span></a></li>
+        <li><a href="/pay-a-polygon-invoice-by-matching-the-network-token-and-address/"><span class="se91a4fb">Pay a Polygon Invoice by Matching the Network, Token and Address</span></a></li>
+        <li><a href="/why-a-polygon-pos-withdrawal-can-stay-pending/"><span class="se91a4fb">Why a Polygon PoS Withdrawal Can Stay Pending</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
