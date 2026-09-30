@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://cryptonsu.github.io/</loc><lastmod>2026-09-30</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptonsu.github.io/three-checks-before-an-avalanche-token-swap/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/how-to-verify-a-token-contract-address-before-a-swap/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/why-a-token-permit-signature-fails/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
