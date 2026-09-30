@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omnichain Rollback Limits After a Source Reorg</title>
+<meta name="description" content="A source-chain reorg can erase a transfer after a destination has acted; finality gates, message tracking and recovery rules define the rollback limit.">
+<link rel="canonical" href="https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a Source Reorg Cannot Roll Back Every Omnichain Transfer">
+<meta property="og:description" content="A source-chain reorg can erase a transfer after a destination has acted; finality gates, message tracking and recovery rules define the rollback limit.">
+<meta property="og:url" content="https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a Source Reorg Cannot Roll Back Every Omnichain Transfer"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a Source Reorg Cannot Roll Back Every Omnichain Transfer">
+<meta name="twitter:description" content="A source-chain reorg can erase a transfer after a destination has acted; finality gates, message tracking and recovery rules define the rollback limit.">
+<meta property="article:published_time" content="2026-09-30T12:48:19+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/#webpage",
+      "url": "https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/",
+      "name": "Omnichain Rollback Limits After a Source Reorg",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/#article",
+      "headline": "Why a Source Reorg Cannot Roll Back Every Omnichain Transfer",
+      "isAccessibleForFree": true,
+      "description": "A source-chain reorg can erase a transfer after a destination has acted; finality gates, message tracking and recovery rules define the rollback limit.",
+      "datePublished": "2026-09-30T12:48:19+00:00",
+      "dateModified": "2026-09-30T12:48:19+00:00",
+      "url": "https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 590,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a Source Reorg Cannot Roll Back Every Omnichain Transfer",
+          "item": "https://cryptonsu.github.io/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Why a Source Reorg Cannot Roll Back Every Omnichain Transfer</h1>
+<p class="s9db3eda">A source-chain reorg can erase a transfer after a destination has acted; finality gates, message tracking and recovery rules define the rollback limit.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-30T12:48:19+00:00">Sep 30, 2026</time><span>3 min read</span><span>#5b86b5</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/why-a-source-reorg-cannot-roll-back-every-omnichain-transfer.jpg" alt="Cover artwork for Why a Source Reorg Cannot Roll Back Every Omnichain Transfer"></figure>
+      <div class="sf3971b2"><p>An omnichain transfer cannot automatically undo a destination action after a source-chain reorg; each chain records its own transaction history. First, a source contract locks or burns tokens and emits a message. A verifier or relayer observes that event and waits for the required confirmations. It then supplies evidence to a destination contract, which checks the message and releases or mints tokens, or performs another requested action. If the source block is later replaced, the source event may disappear. The destination transaction remains in its separate chain history unless that chain independently reorganizes.</p>
+
+<h2>What happens when the source transaction is reorganized?</h2>
+<p>A source reorg can invalidate the event that justified a destination action, but it does not carry an automatic reversal instruction across chains. If the message has not been verified or executed, the system can stop processing it after detecting the reorg. If the destination has already acted, the original source transaction and the destination transaction no longer match. For example, a reorg that removes a token lock can leave a destination release without backing; one that removes a burn can leave destination tokens minted against a burn that no longer exists.</p>
+<p>The message format and asset design determine what the mismatch means. A message may carry an identifier, sender, recipient, amount and destination instruction. The destination contract checks that its verifier has authorized that message, but it cannot make the source block permanent. For a description of <a href="https://www.tumblr.com/atomicgladiatoraltar/829133317289967616/what-the-model-coordinates" rel="noopener">how omnichain treasury transfers coordinate</a>, see the linked explanation. The key boundary is simple: verification can establish what the source chain reported, while finality determines how much confidence the protocol places in that report.</p>
+
+<h2>How do confirmation rules limit rollback risk?</h2>
+<p>A confirmation rule delays verification until the source transaction has enough blocks behind it, or until the chain reports finality. More waiting lowers exposure to a reorg but increases transfer time. Block depth is a practical threshold on chains where finality is probabilistic; it reduces risk without making reversal impossible. A chain’s finality signal can provide a stronger gate when the protocol supports and trusts it.</p>
+<p>Some systems allow faster processing before full finality. That shifts more responsibility to the verifier and to any quarantine or recovery process. A reorg monitor may flag affected messages and halt further attestations, but that protects messages still waiting to execute. It cannot erase a destination transaction that has already finalized there.</p>
+<ul>
+<li>Check the source transaction and message status, not just the destination receipt.</li>
+<li>Identify the configured confirmation depth or finality requirement for that route.</li>
+<li>Find out whether a reorg pauses pending messages and who can authorize recovery.</li>
+<li>For token transfers, determine whether the source locks or burns and the destination releases or mints.</li>
+</ul>
+
+<h2>Can a protocol reverse the destination action?</h2>
+<p>Only if it has a separate recovery path. A contract might support a compensating transfer, a burn, a refund or a pause while operators investigate. Each path has its own authorization and accounting rules. A corrective transaction is a new transaction; it does not restore the old source history or guarantee that users recover funds. If no recovery mechanism exists, the discrepancy may require governance or other intervention.</p>
+<p>The useful takeaway is to treat the source finality threshold as the point at which the system is willing to accept reorg risk, not as a universal rollback switch. For most users, waiting for the route’s stated finality before treating funds as settled is the safer choice. Fast execution can improve latency, but it leaves a window in which detection and recovery rules matter.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/omnichain-message-schemas-the-fields-to-check-before-bridging/"><span class="se91a4fb">Omnichain Message Schemas: The Fields to Check Before Bridging</span></a></li>
+        <li><a href="/what-a-hardware-wallet-approves-in-a-cross-chain-swap/"><span class="se91a4fb">What a Hardware Wallet Approves in a Cross-Chain Swap</span></a></li>
+        <li><a href="/why-a-100-usdc-bridge-quote-may-deliver-less/"><span class="se91a4fb">Why a 100 USDC Bridge Quote May Deliver Less</span></a></li>
+        <li><a href="/three-checks-for-monero-deposits-after-a-reorg/"><span class="se91a4fb">Three Checks for Monero Deposits After a Reorg</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
