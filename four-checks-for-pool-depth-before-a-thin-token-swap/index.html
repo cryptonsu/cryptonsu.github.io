@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pool Depth Checks Before a Thin Token Swap | Crypto Readout</title>
+<meta name="description" content="A thin token’s pool can look deep until a trade moves its price; check active liquidity, quote impact, reserves and route before approving a swap.">
+<link rel="canonical" href="https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Four Checks for Pool Depth Before a Thin Token Swap">
+<meta property="og:description" content="A thin token’s pool can look deep until a trade moves its price; check active liquidity, quote impact, reserves and route before approving a swap.">
+<meta property="og:url" content="https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/four-checks-for-pool-depth-before-a-thin-token-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Four Checks for Pool Depth Before a Thin Token Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Four Checks for Pool Depth Before a Thin Token Swap">
+<meta name="twitter:description" content="A thin token’s pool can look deep until a trade moves its price; check active liquidity, quote impact, reserves and route before approving a swap.">
+<meta property="article:published_time" content="2026-09-30T15:52:26+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/#webpage",
+      "url": "https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/",
+      "name": "Pool Depth Checks Before a Thin Token Swap | Crypto Readout",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/#article",
+      "headline": "Four Checks for Pool Depth Before a Thin Token Swap",
+      "isAccessibleForFree": true,
+      "description": "A thin token’s pool can look deep until a trade moves its price; check active liquidity, quote impact, reserves and route before approving a swap.",
+      "datePublished": "2026-09-30T15:52:26+00:00",
+      "dateModified": "2026-09-30T15:52:26+00:00",
+      "url": "https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 548,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/covers/four-checks-for-pool-depth-before-a-thin-token-swap.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Four Checks for Pool Depth Before a Thin Token Swap",
+          "item": "https://cryptonsu.github.io/four-checks-for-pool-depth-before-a-thin-token-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Four Checks for Pool Depth Before a Thin Token Swap</h1>
+<p class="s9db3eda">A thin token’s pool can look deep until a trade moves its price; check active liquidity, quote impact, reserves and route before approving a swap.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-09-30T15:52:26+00:00">Sep 30, 2026</time><span>2 min read</span><span>#b2224c</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/four-checks-for-pool-depth-before-a-thin-token-swap.jpg" alt="Cover artwork for Four Checks for Pool Depth Before a Thin Token Swap"></figure>
+      <div class="sf3971b2"><p>Before swapping a thin token, check how much liquidity sits near the current price and how far your trade will move it. On an automated market maker, traders swap against a pool of token reserves rather than placing orders with a single buyer. The pool’s pricing rule adjusts the exchange rate as those reserves change. A small pool can therefore offer a poor price even when the token’s displayed market value looks large.</p>
+
+<h2>How much will this trade move the price?</h2>
+<p>Compare the quoted output with the amount you would expect at the pool’s current price. The gap is price impact: the change caused by your trade moving the pool along its pricing curve. A quote can also reflect the pool fee and any price movement between the quote and execution. For a thin token, try a smaller trade size and compare the quotes. If the output worsens sharply as the size rises, the pool is shallow for that trade.</p>
+
+<h2>Is liquidity active near the current price?</h2>
+<p>Check whether the pool’s liquidity is available where the swap will happen. In a basic constant-product pool, the reserves of both tokens help set the price; as one reserve falls, each additional unit costs more. In a concentrated-liquidity pool, providers can put funds within chosen price ranges, so liquidity outside the current range may not help your trade. A displayed total value can hide that distinction. The fuller guide to <a href="https://aboutcrypto.justblogged.com/base-swap-liquidity-fees-positions-withdrawals" rel="noopener">base swap</a> explains how pool positions and withdrawals affect available liquidity. Treat the displayed total as context, then judge the quote for your exact trade.</p>
+
+<h2>Do the pool’s reserves support your trade direction?</h2>
+<p>Look at both token sides and consider which one your swap will add and which it will remove. A pool with little of the token you want to receive can produce a much worse price than its total value suggests. This is why market capitalisation is not a measure of executable depth: it estimates the value of tokens in circulation, not the amount available at a usable price. Check that the selected pool is for the intended token pair and that the quote shows the expected asset as the output.</p>
+
+<h2>What does the full route and final quote show?</h2>
+<p>Read the route the swap will take. A direct swap uses one pool; a routed swap may pass through intermediate tokens and several pools. Each step can add a fee and expose the trade to more price impact. Review the minimum output, which sets the least you will accept if the price moves before execution, and make sure it is not so loose that a much worse fill still qualifies. Before approving, check these four details together:</p>
+<ul>
+<li>Output for your exact trade size, including the stated fee.</li>
+<li>Liquidity available around the current price.</li>
+<li>Reserves on the side of the pool you will draw from.</li>
+<li>Every pool in the route and the minimum output you accept.</li>
+</ul>
+<p>A quote is a snapshot, not a promise of depth at every size. For most readers, the better choice is to reduce the trade until the quoted output and route make sense, then review them again before signing. If the pool cannot support the size at an acceptable price, waiting or splitting the trade may reduce its impact, though neither guarantees a better fill.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/a-cross-chain-timeout-can-end-before-your-funds-return/"><span class="se91a4fb">A Cross-Chain Timeout Can End Before Your Funds Return</span></a></li>
+        <li><a href="/why-a-test-transfer-finds-cross-chain-mistakes/"><span class="se91a4fb">Why a Test Transfer Finds Cross-Chain Mistakes</span></a></li>
+        <li><a href="/set-a-minimum-for-a-cross-chain-swap/"><span class="se91a4fb">Set a Minimum for a Cross-Chain Swap</span></a></li>
+        <li><a href="/reinvesting-swap-fees-in-a-liquidity-position/"><span class="se91a4fb">Reinvesting swap fees in a liquidity position</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
