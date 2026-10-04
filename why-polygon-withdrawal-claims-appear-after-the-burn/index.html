@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon Bridge withdrawals: why claims appear late</title>
+<meta name="description" content="Polygon PoS withdrawals burn tokens first; Ethereum releases them only after validators checkpoint the burn block and a proof is ready for a separate claim.">
+<link rel="canonical" href="https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Polygon withdrawal claims appear after the burn">
+<meta property="og:description" content="Polygon PoS withdrawals burn tokens first; Ethereum releases them only after validators checkpoint the burn block and a proof is ready for a separate claim.">
+<meta property="og:url" content="https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/why-polygon-withdrawal-claims-appear-after-the-burn-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Polygon withdrawal claims appear after the burn"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Polygon withdrawal claims appear after the burn">
+<meta name="twitter:description" content="Polygon PoS withdrawals burn tokens first; Ethereum releases them only after validators checkpoint the burn block and a proof is ready for a separate claim.">
+<meta property="article:published_time" content="2026-10-04T07:06:58+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/#webpage",
+      "url": "https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/",
+      "name": "Polygon Bridge withdrawals: why claims appear late",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/#article",
+      "headline": "Why Polygon withdrawal claims appear after the burn",
+      "isAccessibleForFree": true,
+      "description": "Polygon PoS withdrawals burn tokens first; Ethereum releases them only after validators checkpoint the burn block and a proof is ready for a separate claim.",
+      "datePublished": "2026-10-04T07:06:58+00:00",
+      "dateModified": "2026-10-04T07:06:58+00:00",
+      "url": "https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 586,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/why-polygon-withdrawal-claims-appear-after-the-burn-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/why-polygon-withdrawal-claims-appear-after-the-burn-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/why-polygon-withdrawal-claims-appear-after-the-burn-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Polygon withdrawal claims appear after the burn",
+          "item": "https://cryptonsu.github.io/why-polygon-withdrawal-claims-appear-after-the-burn/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Why Polygon withdrawal claims appear after the burn</h1>
+<p class="s9db3eda">Polygon PoS withdrawals burn tokens first; Ethereum releases them only after validators checkpoint the burn block and a proof is ready for a separate claim.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-10-04T07:06:58+00:00">Oct 4, 2026</time><span>3 min read</span><span>#9dc7e7</span></p>
+      </header>
+      <figure class="s6beed0d"><img fetchpriority="high" class="s47cf977" src="/assets/covers/why-polygon-withdrawal-claims-appear-after-the-burn.jpg" alt="Cover artwork for Why Polygon withdrawal claims appear after the burn"></figure>
+      <div class="sf3971b2"><p>A Polygon PoS withdrawal burns the bridged tokens on Polygon before Ethereum can release the originals, so the claim appears only after validators record that burn in a checkpoint and a proof is ready. The burn and the claim are separate steps on separate networks. Seeing the first transaction succeed does not mean the second is ready.</p>
+
+<h2>What happens when a Polygon withdrawal starts?</h2>
+<p>The wallet first sends a withdrawal transaction to a Polygon contract. For a bridged token, that transaction burns the Polygon-side representation. The burn is recorded in a Polygon block, but Ethereum’s contracts cannot act on that block just because it exists: they need evidence that the block and its transaction are part of Polygon’s history.</p>
+<p>That evidence arrives through a checkpoint. Polygon validators submit checkpoints to Ethereum, committing to a range of Polygon blocks. A checkpoint is like a dated page in a shared ledger: it lets the Ethereum bridge check whether a particular burn was included. For more on the token flow and the roles of the contracts, see this fuller explanation of <a href="https://oraclewire.pages.dev/polygon-bridge-moves-tokens-between-ethereum-and-polygon/" rel="noopener">how the Polygon Bridge moves tokens between networks</a>.</p>
+
+<h2>Why does the claim button take time to appear?</h2>
+<p>The claim cannot be prepared until a checkpoint covering the burn block has been accepted on Ethereum. A burn near the start of a checkpoint’s block range may become provable sooner than one just after the previous range closed. Validator processing, Ethereum transaction confirmation, and the service that builds the withdrawal proof also add steps. The bridge interface may show the claim only after it has detected the checkpoint and obtained the proof.</p>
+<p>These are distinct stages, so a delay does not by itself mean the burn failed. The burn transaction confirms on Polygon; later, the checkpoint anchors its block on Ethereum; then a proof ties the burn to that checkpoint. Only with that proof can the Ethereum bridge verify the withdrawal and make the claim available. There is no single timer that starts at the burn and guarantees when the button will appear.</p>
+
+<h2>What does the claim do?</h2>
+<p>Once the proof is ready, the wallet submits a second transaction on Ethereum. The bridge contract checks the proof, verifies that the withdrawal has not already been claimed, and releases the corresponding asset. That transaction needs an Ethereum network fee. Until it confirms, the withdrawal is not complete, even if the interface already says “claim” or “action required.”</p>
+<p>The sequence is easiest to track as three separate records:</p>
+<ul>
+<li><strong>Burn:</strong> the Polygon transaction destroys the bridged token.</li>
+<li><strong>Checkpoint and proof:</strong> validators commit the relevant block to Ethereum, and proof data shows the burn’s inclusion.</li>
+<li><strong>Claim:</strong> a user transaction asks the Ethereum contract to release the asset.</li>
+</ul>
+
+<h2>What should you check if a claim is delayed?</h2>
+<p>Start with the Polygon transaction status. If the burn did not confirm, there is no completed withdrawal to claim. If it did, check whether the checkpoint covering its block has arrived and whether the bridge’s transaction page now offers the Ethereum claim. Keep the burn transaction hash; it identifies the withdrawal if the interface needs to refresh or locate it again.</p>
+<p>Before initiating a withdrawal, account for the two fees: one on Polygon to burn the token and another on Ethereum to claim it. Once the burn is confirmed, the Polygon-side tokens cannot simply be returned by cancelling the transaction. The useful distinction is between <em>burned</em>, <em>provable</em>, and <em>claimed</em>: each is a different state, and only the last means the asset has reached Ethereum.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/how-wallet-funded-swaps-trade-without-exchange-deposits/"><span class="se91a4fb">How Wallet-Funded Swaps Trade Without Exchange Deposits</span></a></li>
+        <li><a href="/a-wallet-compatibility-check-step-by-step/"><span class="se91a4fb">A Wallet Compatibility Check, Step by Step</span></a></li>
+        <li><a href="/impermanent-loss-comes-from-how-pools-rebalance/"><span class="se91a4fb">Impermanent Loss Comes From How Pools Rebalance</span></a></li>
+        <li><a href="/native-coins-and-contract-tokens-do-different-jobs/"><span class="se91a4fb">Native coins and contract tokens do different jobs</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
