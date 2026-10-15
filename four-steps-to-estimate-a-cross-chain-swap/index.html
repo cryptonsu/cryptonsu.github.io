@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estimate cross-chain swap output in four steps</title>
+<meta name="description" content="Estimate a cross-chain swap by tracing the route, destination price and every fee, then compare the quoted minimum with the amount you need to receive.">
+<link rel="canonical" href="https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Four steps to estimate a cross-chain swap">
+<meta property="og:description" content="Estimate a cross-chain swap by tracing the route, destination price and every fee, then compare the quoted minimum with the amount you need to receive.">
+<meta property="og:url" content="https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/four-steps-to-estimate-a-cross-chain-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Four steps to estimate a cross-chain swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Four steps to estimate a cross-chain swap">
+<meta name="twitter:description" content="Estimate a cross-chain swap by tracing the route, destination price and every fee, then compare the quoted minimum with the amount you need to receive.">
+<meta property="article:published_time" content="2026-10-15T06:50:51+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/#webpage",
+      "url": "https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/",
+      "name": "Estimate cross-chain swap output in four steps",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/#article",
+      "headline": "Four steps to estimate a cross-chain swap",
+      "isAccessibleForFree": true,
+      "description": "Estimate a cross-chain swap by tracing the route, destination price and every fee, then compare the quoted minimum with the amount you need to receive.",
+      "datePublished": "2026-10-15T06:50:51+00:00",
+      "dateModified": "2026-10-15T06:50:51+00:00",
+      "url": "https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 625,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/four-steps-to-estimate-a-cross-chain-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/four-steps-to-estimate-a-cross-chain-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/four-steps-to-estimate-a-cross-chain-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Four steps to estimate a cross-chain swap",
+          "item": "https://cryptonsu.github.io/four-steps-to-estimate-a-cross-chain-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Four steps to estimate a cross-chain swap</h1>
+<p class="s9db3eda">Estimate a cross-chain swap by tracing the route, destination price and every fee, then compare the quoted minimum with the amount you need to receive.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-10-15T06:50:51+00:00">Oct 15, 2026 · 06:50 UTC</time><span>4 min read</span><span>#eb5572</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/four-steps-to-estimate-a-cross-chain-swap.jpg" alt="Four steps to estimate a cross-chain swap"></figure>
+      <div class="sf3971b2"><p>To estimate a cross-chain swap, trace the tokens through each route step, account for fees, and check the minimum amount promised on the destination chain. The number that matters is what arrives in the destination token, not the source token’s value before the swap.</p>
+
+<h2>What details do you need before estimating a swap?</h2>
+
+<p>Start with the exact input: the amount, token and source chain. Then name the destination token and chain. A token with the same ticker can represent a different asset on another chain, and a wrapped token may not be interchangeable with its counterpart for every route.</p>
+
+<p>Next, inspect the route the quote proposes. A cross-chain swap may trade the source token before a bridge transfer, move an asset across first and trade it on the destination chain, or combine several steps. Each step can change the amount. For a fuller explanation of the combined process, see this account of <a href="https://oraclewire.pages.dev/biswap-combines-a-cross-chain-move-with-an-asset-swap/" rel="noopener">Biswap’s cross-chain move-and-swap flow</a>. The route is the chain of operations behind the final quote.</p>
+
+<h2>How do you calculate the amount that should arrive?</h2>
+
+<p>Work through four steps, using the quote’s destination-token amount as your checkpoint at each stage:</p>
+
+<p><strong>Step 1: Set the input.</strong> Record how much of which token you are spending, and on which chain. Make sure the quote uses the same token and amount you intend to send.</p>
+
+<p><strong>Step 2: Follow each conversion.</strong> Note where the source token is exchanged, what asset the bridge carries, and whether another trade happens after arrival. A bridge moves an asset or its representation between chains; it does not, by itself, guarantee the same token will be available for the final swap.</p>
+
+<p><strong>Step 3: Account for deductions.</strong> The route may include trading fees, bridge or relayer charges, and network fees on one or both chains. Some quotes include these in the displayed output; others list them separately. Check the breakdown so you do not subtract an included fee twice. Destination gas may also need to be paid separately, depending on the route.</p>
+
+<p><strong>Step 4: Read the minimum received.</strong> The quoted output is an estimate at the time shown. The minimum received is the lower bound accepted by the transaction under its slippage setting. If the market moves beyond that bound before execution, the swap may fail instead of delivering less than the minimum.</p>
+
+<p>The route works a little like a parcel handed between carriers: each handoff has its own conditions, but the useful figure is what reaches the final address. In a swap, that means comparing the destination amount after all conversions and costs, rather than judging by a headline exchange rate.</p>
+
+<h2>How should you compare quotes and set slippage?</h2>
+
+<p>Compare routes using the same input and destination token, then look at their minimum received amounts and fee breakdowns. A route with a larger quoted output can still be a worse fit if it has higher costs or a lower minimum. Check whether the estimate is current and whether the quote expires.</p>
+
+<p>Slippage is the difference between the expected and executed trade price. A tighter setting limits how far the result can move from the estimate, but can cause a transaction to fail when prices shift. A wider setting allows more movement and can lower the minimum you receive. Use the smallest tolerance that still makes sense for the route’s conditions, and check the resulting minimum before confirming.</p>
+
+<p>Before sending, verify the source and destination chains, token addresses or names shown by the interface, input amount, fees, and minimum received. If the minimum is below what you need, wait for a better quote or change the route or amount. This gives you a practical estimate: follow the route, count the costs once, and make the final decision on the amount that can arrive.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/starkware-opens-offmarket-for-more-private-polymarket-trading/"><span class="se91a4fb">StarkWare opens OffMarket for more private Polymarket trading</span></a></li>
+        <li><a href="/solana-schedules-alpenglow-for-oct-21-targeting-150ms-finality/"><span class="se91a4fb">Solana schedules Alpenglow for Oct. 21, targeting 150ms finality</span></a></li>
+        <li><a href="/how-to-replace-renbridge-for-a-cross-chain-transfer/"><span class="se91a4fb">How to Replace RenBridge for a Cross-Chain Transfer</span></a></li>
+        <li><a href="/ledger-says-cryptobilis-devices-sent-recovery-phrases-over-lte/"><span class="se91a4fb">Ledger says CryptoBilis devices sent recovery phrases over LTE</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
