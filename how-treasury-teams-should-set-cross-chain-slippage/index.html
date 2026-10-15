@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Slippage Rules for Treasury Teams</title>
+<meta name="description" content="Set cross-chain slippage by route leg, liquidity and settlement time, then enforce a minimum received amount and review failed fills.">
+<link rel="canonical" href="https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Treasury Teams Should Set Cross-Chain Slippage">
+<meta property="og:description" content="Set cross-chain slippage by route leg, liquidity and settlement time, then enforce a minimum received amount and review failed fills.">
+<meta property="og:url" content="https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/how-treasury-teams-should-set-cross-chain-slippage-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Treasury Teams Should Set Cross-Chain Slippage"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Treasury Teams Should Set Cross-Chain Slippage">
+<meta name="twitter:description" content="Set cross-chain slippage by route leg, liquidity and settlement time, then enforce a minimum received amount and review failed fills.">
+<meta property="article:published_time" content="2026-10-15T21:20:23+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/#webpage",
+      "url": "https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/",
+      "name": "Cross-Chain Slippage Rules for Treasury Teams",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/#article",
+      "headline": "How Treasury Teams Should Set Cross-Chain Slippage",
+      "isAccessibleForFree": true,
+      "description": "Set cross-chain slippage by route leg, liquidity and settlement time, then enforce a minimum received amount and review failed fills.",
+      "datePublished": "2026-10-15T21:20:23+00:00",
+      "dateModified": "2026-10-15T21:20:23+00:00",
+      "url": "https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 667,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-treasury-teams-should-set-cross-chain-slippage-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-treasury-teams-should-set-cross-chain-slippage-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-treasury-teams-should-set-cross-chain-slippage-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Treasury Teams Should Set Cross-Chain Slippage",
+          "item": "https://cryptonsu.github.io/how-treasury-teams-should-set-cross-chain-slippage/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">How Treasury Teams Should Set Cross-Chain Slippage</h1>
+<p class="s9db3eda">Set cross-chain slippage by route leg, liquidity and settlement time, then enforce a minimum received amount and review failed fills.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-10-15T21:20:23+00:00">Oct 15, 2026 · 21:20 UTC</time><span>4 min read</span><span>#c7e5f6</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/how-treasury-teams-should-set-cross-chain-slippage.jpg" alt="How Treasury Teams Should Set Cross-Chain Slippage"></figure>
+      <div class="sf3971b2"><p>Treasury teams should set cross-chain slippage by route leg, liquidity and settlement time, then enforce a minimum amount received on the destination chain. A route starts with a quote for the input token and amount. A router may swap that token before a bridge transfer, send it across, then swap again after arrival. Each swap faces a changing market; the bridge adds fees and settlement time. Slippage is the allowed difference between a quoted output and the output at execution. It is not a budget for every fee or for a bad route.</p>
+
+<h2>What does a cross-chain slippage limit control?</h2>
+
+<p>A slippage limit sets how far execution can move from the quoted rate before a swap reverts or fails its minimum-output check. The router calculates an expected output, then applies the limit to set the minimum acceptable output. If a trade is quoted to return 100 units and the limit is 1%, the minimum is 99 units, before any separate fees the quote does not include. The exact calculation depends on the route and its contracts.</p>
+
+<p>Cross-chain routes can have more than one such check. A source-chain swap can change how much of the bridge asset is sent. A destination-chain swap can change how much of the treasury’s target token arrives. Bridge fees, gas costs and relayer charges may reduce the final amount too, but they are distinct from swap slippage. A quote should show the estimated output, minimum output and fees so the team can judge the total result.</p>
+
+<p>That distinction is easy to miss when comparing routes. A route with a generous slippage limit may be more likely to execute during a price move, but it can also permit a worse fill. For a walkthrough of spot-swap routing, this <a href="https://minaovio431293.luwebs.com/43799131/3-paraswap-spot-swap-routes-for-your-first-token-trade" rel="noopener">guide to Paraswap routes and token trades</a> covers the routing layer that a treasury may encounter before a bridge leg.</p>
+
+<h2>How should a treasury choose its limit?</h2>
+
+<p>Set limits for each route leg, rather than applying one broad percentage to every transfer. Start with the team’s maximum acceptable loss in the target asset. Then check the route’s quoted output, depth, expected settlement time and the assets involved. A deeper market and a short, predictable route can usually support a tighter limit. A thin market or a longer route may need more room, but extra tolerance should be approved against the same loss budget.</p>
+
+<p>The quote is an estimate, not a promise of the full cross-chain outcome. A source transaction can succeed while a later step is delayed, repriced or unable to meet its own minimum. Treat the destination minimum as the operational control: compare it with the amount the treasury needs, after known fees. If the route cannot meet that floor, reject it or request a fresh quote rather than widening the limit by habit.</p>
+
+<p>A useful policy records four things for each approved route:</p>
+
+<ul>
+<li>The input and target assets, chain pair and permitted route or router.</li>
+<li>The expected output and minimum acceptable destination amount, net of known fees.</li>
+<li>The maximum slippage for each swap leg, with a defined approver for exceptions.</li>
+<li>The quote time, expiry or re-quote trigger, and what staff should do after a partial or failed route.</li>
+</ul>
+
+<h2>How can teams keep the rule useful?</h2>
+
+<p>Review the policy against actual execution results. Compare quoted and received amounts for each leg, and separate market movement from fees, failed transactions and route delays. That record shows whether a limit is routinely too tight, unnecessarily loose or attached to the wrong part of the route. Change it only when the data and the treasury’s loss tolerance support the change.</p>
+
+<p>Use a plain analogy: a slippage limit is a minimum acceptable delivery quantity, not a promise that delivery will happen on time. The best default for most treasury teams is a conservative route-specific limit paired with a clear minimum received amount and a re-quote process. That makes the trade-off explicit: a transaction may fail when the market moves, but it cannot quietly execute below the team’s stated floor.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/asic-proposes-custody-and-trading-rules-for-australian-crypto-platform/"><span class="se91a4fb">ASIC proposes custody and trading rules for Australian crypto platforms</span></a></li>
+        <li><a href="/why-cross-chain-transfers-take-time/"><span class="se91a4fb">Why Cross-Chain Transfers Take Time</span></a></li>
+        <li><a href="/what-a-cross-chain-swap-quote-actually-compares/"><span class="se91a4fb">What a Cross-Chain Swap Quote Actually Compares</span></a></li>
+        <li><a href="/payward-agrees-to-buy-lithuanias-saldo-bank/"><span class="se91a4fb">Payward agrees to buy Lithuania’s Saldo Bank</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
