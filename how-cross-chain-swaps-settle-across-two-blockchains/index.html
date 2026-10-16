@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Swap Settlement Explained for Wallet Users</title>
+<meta name="description" content="A cross-chain swap moves value through source-chain execution, a bridge or solver, and destination settlement, with timing and failure rules set by the route.">
+<link rel="canonical" href="https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Cross-Chain Swaps Settle Across Two Blockchains">
+<meta property="og:description" content="A cross-chain swap moves value through source-chain execution, a bridge or solver, and destination settlement, with timing and failure rules set by the route.">
+<meta property="og:url" content="https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/how-cross-chain-swaps-settle-across-two-blockchains-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Cross-Chain Swaps Settle Across Two Blockchains"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Cross-Chain Swaps Settle Across Two Blockchains">
+<meta name="twitter:description" content="A cross-chain swap moves value through source-chain execution, a bridge or solver, and destination settlement, with timing and failure rules set by the route.">
+<meta property="article:published_time" content="2026-10-16T03:14:45+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/#webpage",
+      "url": "https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/",
+      "name": "Cross-Chain Swap Settlement Explained for Wallet Users",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/#article",
+      "headline": "How Cross-Chain Swaps Settle Across Two Blockchains",
+      "isAccessibleForFree": true,
+      "description": "A cross-chain swap moves value through source-chain execution, a bridge or solver, and destination settlement, with timing and failure rules set by the route.",
+      "datePublished": "2026-10-16T03:14:45+00:00",
+      "dateModified": "2026-10-16T03:14:45+00:00",
+      "url": "https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 641,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-cross-chain-swaps-settle-across-two-blockchains-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-cross-chain-swaps-settle-across-two-blockchains-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-cross-chain-swaps-settle-across-two-blockchains-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Cross-Chain Swaps Settle Across Two Blockchains",
+          "item": "https://cryptonsu.github.io/how-cross-chain-swaps-settle-across-two-blockchains/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">How Cross-Chain Swaps Settle Across Two Blockchains</h1>
+<p class="s9db3eda">A cross-chain swap moves value through source-chain execution, a bridge or solver, and destination settlement, with timing and failure rules set by the route.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-10-16T03:14:45+00:00">Oct 16, 2026 · 03:14 UTC</time><span>4 min read</span><span>#370f0f</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/how-cross-chain-swaps-settle-across-two-blockchains.jpg" alt="How Cross-Chain Swaps Settle Across Two Blockchains"></figure>
+      <div class="sf3971b2"><p>A cross-chain swap trades an asset on one blockchain for an asset on another through a route that coordinates actions on both networks. The wallet first shows a route and its terms; after the user approves it, a contract, bridge or solver carries out the required steps. The swap is complete only when the destination asset is delivered under those terms.</p>
+
+<p>A route may use a bridge that transfers value between chains, or a solver that advances its own funds on the destination chain and later settles against the source-side transfer. These designs have different settlement rules and risks. For a closer look at <a href="https://dailyblockchainnews.github.io/quickswap-explained-what-cross-chain-integrators-must-model/" rel="noopener">QuickSwap’s cross-chain integrator model</a>, see the separate explanation for integrators. The same distinctions help wallet users understand what a route’s quote does and does not promise.</p>
+
+<h2>What happens after I approve a cross-chain swap?</h2>
+
+<p>Approval starts a sequence, not one transaction spanning both chains. The wallet submits a transaction to the source network. Depending on the route, that transaction may transfer tokens to a contract, deposit them with a bridge, or make them available for a solver to claim. The source chain must include and confirm the transaction before the next step can rely on it.</p>
+
+<p>Then the bridge or solver observes the source-side event. A bridge may mint or release a corresponding asset on the destination network. A solver may instead send the requested destination asset from its own inventory, then claim or settle the source-side funds. The destination action is another transaction, with its own execution and confirmation time.</p>
+
+<p>Think of the route as a two-part handoff: the first network records what was given, and the second records what was delivered. The analogy has limits. Blockchains do not share one ledger, so there is no single transaction that automatically rolls back both sides if one step fails.</p>
+
+<h2>Why can the swap take longer than the wallet quote?</h2>
+
+<p>The route waits for conditions on both networks, and they do not necessarily finish together. The source transaction can wait for inclusion, then for enough confirmation or finality under the route’s rules. A relayer, bridge or solver must detect that state and submit the destination transaction. Network congestion, transaction fees and destination execution can add time at either stage.</p>
+
+<p>A quote is a proposed route with an expected output and conditions. It is not proof that the destination transfer has happened. The route may also set a time limit, minimum output or other execution condition. If those conditions are no longer met, execution can fail or require another action. The exact result depends on the contracts and service handling that route.</p>
+
+<p>Wallet status labels can describe different steps: submitted, confirmed on the source chain, in progress, or complete on the destination. Check the transaction record on both networks when available. A source confirmation alone does not establish that the destination asset arrived.</p>
+
+<h2>What should I check before using a route?</h2>
+
+<p>Compare the route’s promised output and fees with the assets you expect to receive, then check which networks and tokens are involved. The quoted output can account for route costs and market movement differently across providers. Also look for the route’s time limit and what its interface says happens if execution does not finish.</p>
+
+<ul>
+<li>Confirm the source and destination networks, and the exact token on each.</li>
+<li>Review the amount expected after fees and any minimum-output condition.</li>
+<li>Check whether the route uses a bridge, a solver, or another execution model.</li>
+<li>Keep the transaction identifiers and verify completion on the destination network.</li>
+</ul>
+
+<p>For most wallet users, the better route is one whose output, timing conditions and failure handling are clear, even if another quote looks marginally better. A lower displayed fee does not explain how destination settlement works. Before confirming, make sure you know what the wallet will submit first and how you can tell the swap has finished.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/how-cross-chain-minimum-output-guarantees-work/"><span class="se91a4fb">How Cross-Chain Minimum Output Guarantees Work</span></a></li>
+        <li><a href="/cross-chain-swap-receipts-check-both-chains/"><span class="se91a4fb">Cross-Chain Swap Receipts: Check Both Chains</span></a></li>
+        <li><a href="/how-treasury-teams-should-set-cross-chain-slippage/"><span class="se91a4fb">How Treasury Teams Should Set Cross-Chain Slippage</span></a></li>
+        <li><a href="/asic-proposes-custody-and-trading-rules-for-australian-crypto-platform/"><span class="se91a4fb">ASIC proposes custody and trading rules for Australian crypto platforms</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
