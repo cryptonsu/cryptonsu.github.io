@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon bridge deposit and withdrawal with Matic.js</title>
+<meta name="description" content="Polygon bridge deposit and withdrawal with Matic.js: initialize POSClient, approve and deposit ERC-20 tokens, then wait for a checkpoint and confirm the exit.">
+<link rel="canonical" href="https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to deposit and withdraw with Matic.js and confirm transfers">
+<meta property="og:description" content="Polygon bridge deposit and withdrawal with Matic.js: initialize POSClient, approve and deposit ERC-20 tokens, then wait for a checkpoint and confirm the exit.">
+<meta property="og:url" content="https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to deposit and withdraw with Matic.js and confirm transfers"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to deposit and withdraw with Matic.js and confirm transfers">
+<meta name="twitter:description" content="Polygon bridge deposit and withdrawal with Matic.js: initialize POSClient, approve and deposit ERC-20 tokens, then wait for a checkpoint and confirm the exit.">
+<meta property="article:published_time" content="2026-11-16T21:36:35+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/#webpage",
+      "url": "https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/",
+      "name": "Polygon bridge deposit and withdrawal with Matic.js",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/#article",
+      "headline": "How to deposit and withdraw with Matic.js and confirm transfers",
+      "isAccessibleForFree": true,
+      "description": "Polygon bridge deposit and withdrawal with Matic.js: initialize POSClient, approve and deposit ERC-20 tokens, then wait for a checkpoint and confirm the exit.",
+      "datePublished": "2026-11-16T21:36:35+00:00",
+      "dateModified": "2026-11-16T21:36:35+00:00",
+      "url": "https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 755,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to deposit and withdraw with Matic.js and confirm transfers",
+          "item": "https://cryptonsu.github.io/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">How to deposit and withdraw with Matic.js and confirm transfers</h1>
+<p class="s9db3eda">Polygon bridge deposit and withdrawal with Matic.js: initialize POSClient, approve and deposit ERC-20 tokens, then wait for a checkpoint and confirm the exit.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-16T21:36:35+00:00">Nov 16, 2026 · 21:36 UTC</time><span>4 min read</span><span>#95086a</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/how-to-deposit-and-withdraw-with-matic-js-and-confirm-transfers.jpg" alt="How to deposit and withdraw with Matic.js and confirm transfers"></figure>
+      <div class="sf3971b2"><p>Polygon bridge deposits and withdrawals with Matic.js use POSClient to move ERC-20 tokens from Ethereum to Polygon PoS and back, with transaction hashes and status checks confirming each stage. For a transfer outside your app, <a href="https://polygonbridge.co" rel="noopener">Polygon bridge</a> gives you a way to move supported assets between Ethereum and Polygon PoS.</p>
+<h2>Run an ERC-20 deposit and withdrawal</h2>
+<p>Matic.js wraps the bridge contracts and builds the proof needed to release tokens on Ethereum after a Polygon withdrawal. You need Ethereum and Polygon RPC URLs, a signer with ETH and POL for transaction costs, and the mapped token address on each network.</p>
+<ol>
+<li><strong>Install and initialize.</strong> In your Node.js or browser project, install Matic.js and one provider plugin: <em>@maticnetwork/maticjs-ethers</em> for ethers, or <em>@maticnetwork/maticjs-web3</em> for web3. Import the plugin, call <em>use(plugin)</em>, then initialize a POSClient with the network, version, and parent and child providers. The parent provider connects to Ethereum; the child connects to Polygon PoS. The signer must be able to sign transactions on the chain each call uses.</li>
+<li><strong>Choose the token and approve it.</strong> Use <em>posClient.erc20(address, true)</em> for the Ethereum (parent) token; <em>posClient.erc20(address)</em> targets the Polygon (child) token. On the parent token, call <em>approve(amount)</em> and wait for the transaction. Read its hash with <em>getTransactionHash()</em>. Approval lets the bridge contract transfer that amount from the signer; it is a separate Ethereum transaction from the deposit.</li>
+<li><strong>Deposit to Polygon.</strong> Call <em>deposit(amount, userAddress)</em> on the parent token, where <em>userAddress</em> is the Polygon address that should receive the tokens. Wait for the transaction and save its hash with <em>getTransactionHash()</em>. That hash identifies the Ethereum deposit. Matic.js status checks can confirm whether it is deposited; keep the hash so the app can check the same transfer later.</li>
+<li><strong>Start the withdrawal on Polygon.</strong> After the deposited tokens are available on the child token, call <em>withdrawStart(amount)</em> there. Save the resulting burn transaction hash. This transaction starts the return route: the Polygon-side tokens are burned, and the Ethereum exit must wait for the bridge checkpoint that recognizes that burn.</li>
+<li><strong>Wait for the checkpoint, then exit.</strong> Poll <em>posClient.isCheckPointed(burnTxHash)</em> with the burn hash. Continue only when it returns <em>true</em>; calling <em>withdrawExit</em> before then fails because the checkpoint proof is not ready. Once ready, use the parent token’s <em>withdrawExit(burnTxHash)</em> or <em>withdrawExitFaster(burnTxHash)</em>. The faster method gets the proof from a proof API. The regular method builds it through many RPC calls, which can hit provider rate limits. A rate-limited attempt may need a provider with more capacity or a later retry. Save the exit transaction hash and don’t submit the exit twice: a second exit reverts. Check <em>isWithdrawExited(burnTxHash)</em> first if the app is retrying after a timeout.</li>
+<li><strong>Confirm completion.</strong> Treat the flow as done only after <em>isDeposited(depositTxHash)</em> returns <em>true</em> for the deposit and <em>isWithdrawExited(burnTxHash)</em> returns <em>true</em> for the exit. Keep the approval, deposit, burn, and exit hashes with their statuses so the app can resume polling after a restart and distinguish a pending checkpoint from a completed withdrawal.</li>
+</ol>
+<p>The critical dependency is the checkpoint: Matic.js can prepare the exit proof, but Ethereum cannot complete the release until the burn is checkpointed. Persisting each hash and checking the final status gives the app a clear record of both directions.</p>
+<h2>Related</h2>
+<h3>Matic.js vs calling RootChainManager directly</h3>
+<p>Matic.js provides a POSClient interface around the bridge contracts and handles building the exit proof. Calling RootChainManager directly means your app must manage the contract interactions and proof flow itself.</p>
+<h3>How to bridge ERC-721 with Matic.js</h3>
+<p>This flow covers ERC-20 tokens. ERC-721 bridging uses NFT-specific bridge methods and token approvals, so adapt the app to the Matic.js NFT interface instead of using the ERC-20 calls here.</p>
+<h2>Questions developers ask next</h2>
+<h3>How long until isCheckPointed returns true?</h3>
+<p>It depends on when the burn transaction is included in a checkpoint. Poll the burn hash and proceed only when <em>isCheckPointed</em> returns <em>true</em>; don’t assume a fixed wait time in the app.</p>
+<h3>Does Matic.js support Polygon zkEVM?</h3>
+<p>This procedure is for Polygon PoS through POSClient. It does not describe a zkEVM bridge flow, so use the SDK and bridge instructions intended for that network.</p>
+<h3>How do I estimate gas for withdrawExit?</h3>
+<p>Estimate against the Ethereum transaction using the configured parent provider and signer. The proof-building route can affect RPC load, and the transaction’s gas estimate can vary with the proof and network conditions; handle estimation errors before submitting.</p>
+<h3>Can Matic.js bridge native ETH?</h3>
+<p>The calls here move ERC-20 tokens. Native ETH is not an ERC-20 token, so this approve-and-deposit flow does not apply to it; use the bridge method intended for the asset type.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/us-wins-court-authority-over-1-2bn-in-stolen-binance-crypto/"><span class="se91a4fb">US wins court authority over $1.2bn in stolen Binance crypto</span></a></li>
+        <li><a href="/us-wins-authority-over-1-2b-in-binance-hack-crypto-2/"><span class="se91a4fb">US wins authority over $1.2B in Binance hack crypto</span></a></li>
+        <li><a href="/us-wins-authority-over-1-2b-of-binances-stolen-crypto/"><span class="se91a4fb">US wins authority over $1.2B of Binance’s stolen crypto</span></a></li>
+        <li><a href="/us-court-authorizes-seizure-of-1-2bn-in-binance-theft/"><span class="se91a4fb">US court authorizes seizure of $1.2bn in Binance theft</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
