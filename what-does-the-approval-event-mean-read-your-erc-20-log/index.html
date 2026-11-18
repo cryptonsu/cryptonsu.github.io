@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Does the Approval Event Mean? Decode ERC-20 Logs</title>
+<meta name="description" content="What does the Approval event in your ERC-20 contract mean? It records an owner’s allowance for a spender, in base units, so you can decode the permission.">
+<link rel="canonical" href="https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What Does the Approval Event Mean? Read Your ERC-20 Log">
+<meta property="og:description" content="What does the Approval event in your ERC-20 contract mean? It records an owner’s allowance for a spender, in base units, so you can decode the permission.">
+<meta property="og:url" content="https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/what-does-the-approval-event-mean-read-your-erc-20-log-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What Does the Approval Event Mean? Read Your ERC-20 Log"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Does the Approval Event Mean? Read Your ERC-20 Log">
+<meta name="twitter:description" content="What does the Approval event in your ERC-20 contract mean? It records an owner’s allowance for a spender, in base units, so you can decode the permission.">
+<meta property="article:published_time" content="2026-11-18T20:37:24+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/#webpage",
+      "url": "https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/",
+      "name": "What Does the Approval Event Mean? Decode ERC-20 Logs",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/#article",
+      "headline": "What Does the Approval Event Mean? Read Your ERC-20 Log",
+      "isAccessibleForFree": true,
+      "description": "What does the Approval event in your ERC-20 contract mean? It records an owner’s allowance for a spender, in base units, so you can decode the permission.",
+      "datePublished": "2026-11-18T20:37:24+00:00",
+      "dateModified": "2026-11-18T20:37:24+00:00",
+      "url": "https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 535,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/what-does-the-approval-event-mean-read-your-erc-20-log-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/what-does-the-approval-event-mean-read-your-erc-20-log-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/what-does-the-approval-event-mean-read-your-erc-20-log-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What Does the Approval Event Mean? Read Your ERC-20 Log",
+          "item": "https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">What Does the Approval Event Mean? Read Your ERC-20 Log</h1>
+<p class="s9db3eda">What does the Approval event in your ERC-20 contract mean? It records an owner’s allowance for a spender, in base units, so you can decode the permission.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-18T20:37:24+00:00">Nov 18, 2026 · 20:37 UTC</time><span>3 min read</span><span>#913fe9</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/what-does-the-approval-event-mean-read-your-erc-20-log.jpg" alt="What Does the Approval Event Mean? Read Your ERC-20 Log"></figure>
+      <div class="sf3971b2"><p>An ERC-20 Approval log in your contract means an owner set an allowance for a spender: a limit on how many tokens that spender can move on the owner’s behalf. The event records that permission change in the token’s base units. It is not a token transfer.</p>
+<h2>How to read an ERC-20 Approval log</h2>
+<p>An ERC-20 Approval log contains an owner address, a spender address and a value. The token contract emits it whenever an <em>approve</em> call succeeds, as the <a href="https://eips.ethereum.org/EIPS/eip-20" rel="nofollow noopener">ERC-20 standard</a> specifies.</p>
+<p>Decode the log with the ABI for the token contract that emitted it. The ABI tells your log decoder which fields are indexed and how to interpret the log’s topics and data. For ERC-20, <em>owner</em> and <em>spender</em> are indexed, so they appear in the topics; <em>value</em> is unindexed, so it is encoded in the log data. The event identifies whose tokens are covered, which address may spend them, and the allowance amount.</p>
+<p>Say you see a value of 1000000. With a token that has six decimals, that means one token: the stored integer is divided by 10<sup>6</sup> for display. The event’s value is not automatically a whole-token amount. Read the token’s decimals before converting it, and keep the raw integer for calculations.</p>
+<p>A value of zero records that the owner set this allowance to zero, removing the spender’s remaining permission under that allowance. A later successful <em>approve</em> can replace it with another value. ERC-20 <em>approve</em> sets the allowance for an owner–spender pair; it does not add the new value to the old one.</p>
+<h2>Why the event is not the current allowance</h2>
+<p>An Approval log records an allowance update at a particular point in the contract’s history; <em>allowance(owner, spender)</em> returns the remaining spending permission now. A spender can use <em>transferFrom</em> to spend against an allowance, so the latest Approval log may not tell you the current amount.</p>
+<p>There is another decoding trap: ERC-20 and ERC-721 both call an event <em>Approval</em>, and the event signature uses the same argument types. But their third arguments have different meanings and indexing. ERC-20’s third argument is an unindexed allowance value. ERC-721’s is an indexed <em>tokenId</em>, identifying the individual NFT approved for an address, as set out in the <a href="https://eips.ethereum.org/EIPS/eip-721" rel="nofollow noopener">ERC-721 standard</a>. The shared signature does not make the log layouts interchangeable: use the ABI for the emitting contract and the token standard it implements.</p>
+<p>Current implementations can also change an allowance without emitting a new Approval log. In OpenZeppelin Contracts 5.x, spending through <em>transferFrom</em> can reduce the allowance without emitting that event. This is allowed by ERC-20, so a log indexer that simply replays Approval events can drift from the contract’s current state. For an accurate current value, query <em>allowance(owner, spender)</em> from the contract; OpenZeppelin documents this behavior in its <a href="https://docs.openzeppelin.com/contracts/5.x/api/token/erc20" rel="nofollow noopener">ERC20 API reference</a>.</p>
+<p>For an integration, decode Approval logs to track the permission changes the contract reports, then query <em>allowance</em> when you need the live amount. That same distinction helps when reviewing wallet permissions in <a href="https://graph.org/How-to-Secure-a-Wallet-After-a-Suspicious-Dapp-Checklist-11-17" rel="noopener">revokecash</a>: the event is a record of a change, while the current allowance tells you what a spender can still use. Check both, and you can explain what happened without mistaking an old log for today’s permission.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/what-should-a-dapp-check-before-cross-chain-deposits/"><span class="se91a4fb">What Should a Dapp Check Before Cross-Chain Deposits?</span></a></li>
+        <li><a href="/what-happens-to-token-approval-when-a-fraxswap-swap-fails/"><span class="se91a4fb">What Happens to Token Approval When a Fraxswap Swap Fails?</span></a></li>
+        <li><a href="/what-affects-cow-swap-costs-why-the-same-order-waits/"><span class="se91a4fb">What affects CoW Swap costs: Why the same order waits</span></a></li>
+        <li><a href="/us-wins-court-authority-over-1-2bn-in-binance-theft/"><span class="se91a4fb">US wins court authority over $1.2bn in Binance theft</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
