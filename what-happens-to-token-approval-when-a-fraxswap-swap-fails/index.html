@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Happens to Token Approval When a DEX Swap Fails</title>
+<meta name="description" content="When a DEX swap fails, a confirmed token approval usually remains because its ERC-20 allowance was set separately. Check it before retrying or revoke it if unused.">
+<link rel="canonical" href="https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What Happens to Token Approval When a Fraxswap Swap Fails?">
+<meta property="og:description" content="When a DEX swap fails, a confirmed token approval usually remains because its ERC-20 allowance was set separately. Check it before retrying or revoke it if unused.">
+<meta property="og:url" content="https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/what-happens-to-token-approval-when-a-fraxswap-swap-fails-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What Happens to Token Approval When a Fraxswap Swap Fails?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Happens to Token Approval When a Fraxswap Swap Fails?">
+<meta name="twitter:description" content="When a DEX swap fails, a confirmed token approval usually remains because its ERC-20 allowance was set separately. Check it before retrying or revoke it if unused.">
+<meta property="article:published_time" content="2026-11-18T04:39:24+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/#webpage",
+      "url": "https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/",
+      "name": "What Happens to Token Approval When a DEX Swap Fails",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/#article",
+      "headline": "What Happens to Token Approval When a Fraxswap Swap Fails?",
+      "isAccessibleForFree": true,
+      "description": "When a DEX swap fails, a confirmed token approval usually remains because its ERC-20 allowance was set separately. Check it before retrying or revoke it if unused.",
+      "datePublished": "2026-11-18T04:39:24+00:00",
+      "dateModified": "2026-11-18T04:39:24+00:00",
+      "url": "https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 604,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/what-happens-to-token-approval-when-a-fraxswap-swap-fails-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/what-happens-to-token-approval-when-a-fraxswap-swap-fails-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/what-happens-to-token-approval-when-a-fraxswap-swap-fails-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What Happens to Token Approval When a Fraxswap Swap Fails?",
+          "item": "https://cryptonsu.github.io/what-happens-to-token-approval-when-a-fraxswap-swap-fails/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">What Happens to Token Approval When a Fraxswap Swap Fails?</h1>
+<p class="s9db3eda">When a DEX swap fails, a confirmed token approval usually remains because its ERC-20 allowance was set separately. Check it before retrying or revoke it if unused.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-18T04:39:24+00:00">Nov 18, 2026 · 04:39 UTC</time><span>4 min read</span><span>#bc77a0</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/what-happens-to-token-approval-when-a-fraxswap-swap-fails.jpg" alt="What Happens to Token Approval When a Fraxswap Swap Fails?"></figure>
+      <div class="sf3971b2"><p>A failed Fraxswap swap usually leaves a previously confirmed token approval in place because the ERC-20 allowance was set in a separate transaction. The approval authorizes a spender to transfer tokens up to a specified amount; the later swap is a different on-chain action.</p>
+<h2>A failed swap rolls back its transfer, not an earlier approval</h2>
+<p>The token contract records an allowance: how much a named spender may transfer on the token holder’s behalf. For a swap, the spender is often the Fraxswap Router. Approving the router changes that allowance, and the approval transaction must be confirmed on Ethereum.</p>
+<p>The router then uses the allowance when you submit a swap. It attempts to take the input tokens and carry out the exchange. If the swap reverts, the EVM rolls back the state changes made by that swap, including an attempted token transfer. The approved tokens normally stay in your wallet, but the allowance from the earlier transaction remains available to the router.</p>
+<p>That distinction can matter when a swap fails because its minimum output was not met. On Fraxswap, that message concerns the minimum amount the trade must return; the <a href="https://cryptonsu.github.io/insufficient-output-amount-means-the-swap-missed-its-floor/">Fraxswap insufficient-output fix</a> explains what to adjust before trying that trade again. The failed attempt does not, by itself, erase a confirmed allowance.</p>
+<p>Think of the approval as a standing permission slip and the swap as one attempt to use it. A failed attempt does not cancel the slip. It also does not mean the router took the approved amount: a reverted transaction’s attempted state changes are undone. The reverted swap still consumes gas.</p>
+<p>Say you approve the router to spend 100 tokens, wait for that transaction to confirm, then submit a swap that reverts. The allowance remains at up to 100 tokens, unless another transaction changed it. You can usually retry without approving again if the remaining allowance is enough for the input amount.</p>
+<p>A small change to that case changes the result: suppose your wallet bundles the approval and swap into one atomic transaction. If the swap reverts, the whole transaction’s state changes roll back, including the approval. The principle that a revert undoes state changes still holds; what changes is that there was no separately confirmed approval left behind.</p>
+<p>Before retrying, inspect the allowance for the token and spender named in the approval. Approve again only if the allowance is missing or too small for the planned swap. An approval can cover a set amount or a larger amount, depending on what you authorized, so check the actual allowance rather than assuming the failed swap reset it.</p>
+<p>If you do not plan to use that router again, you can reduce the allowance or revoke it using your wallet or an allowance-management tool. That change requires its own transaction and may cost gas. Revoking permission does not reverse a completed swap; it changes how much the spender may transfer in the future.</p>
+<h2>Related</h2>
+<h3>Why does a DEX swap need token approval?</h3>
+<p>An ERC-20 token contract does not automatically let a DEX move tokens from your wallet. The approval sets an allowance for the router, so it can transfer the swap’s input tokens when you submit a trade. The swap uses that permission; the approval itself does not make the exchange.</p>
+<h3>Can I approve only the amount I plan to swap?</h3>
+<p>Yes. You can approve an amount that covers the planned input instead of a larger allowance, if your wallet or the approval flow offers that choice. A smaller allowance limits how much the spender can transfer under that permission, but a later swap may need another approval if the remaining allowance is insufficient.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/what-affects-cow-swap-costs-why-the-same-order-waits/"><span class="se91a4fb">What affects CoW Swap costs: Why the same order waits</span></a></li>
+        <li><a href="/us-wins-court-authority-over-1-2bn-in-binance-theft/"><span class="se91a4fb">US wins court authority over $1.2bn in Binance theft</span></a></li>
+        <li><a href="/insufficient-output-amount-means-the-swap-missed-its-floor/"><span class="se91a4fb">INSUFFICIENT_OUTPUT_AMOUNT means the swap missed its floor</span></a></li>
+        <li><a href="/us-wins-authority-over-1-2bn-of-binances-stolen-crypto/"><span class="se91a4fb">US wins authority over $1.2bn of Binance’s stolen crypto</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
