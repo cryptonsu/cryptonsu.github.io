@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Call Uniswap V2 Router or Pair Directly? Safer Swaps</title>
+<meta name="description" content="Call the Uniswap V2 router for user-facing swaps; call a pair directly only when your contract transfers tokens atomically and checks output on every route.">
+<link rel="canonical" href="https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Should I Call the Router or Pair Directly for Swaps?">
+<meta property="og:description" content="Call the Uniswap V2 router for user-facing swaps; call a pair directly only when your contract transfers tokens atomically and checks output on every route.">
+<meta property="og:url" content="https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/should-i-call-the-router-or-pair-directly-for-swaps-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Should I Call the Router or Pair Directly for Swaps?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Should I Call the Router or Pair Directly for Swaps?">
+<meta name="twitter:description" content="Call the Uniswap V2 router for user-facing swaps; call a pair directly only when your contract transfers tokens atomically and checks output on every route.">
+<meta property="article:published_time" content="2026-11-19T03:18:28+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/#webpage",
+      "url": "https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/",
+      "name": "Call Uniswap V2 Router or Pair Directly? Safer Swaps",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/#article",
+      "headline": "Should I Call the Router or Pair Directly for Swaps?",
+      "isAccessibleForFree": true,
+      "description": "Call the Uniswap V2 router for user-facing swaps; call a pair directly only when your contract transfers tokens atomically and checks output on every route.",
+      "datePublished": "2026-11-19T03:18:28+00:00",
+      "dateModified": "2026-11-19T03:18:28+00:00",
+      "url": "https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 570,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/should-i-call-the-router-or-pair-directly-for-swaps-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/should-i-call-the-router-or-pair-directly-for-swaps-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/should-i-call-the-router-or-pair-directly-for-swaps-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Should I Call the Router or Pair Directly for Swaps?",
+          "item": "https://cryptonsu.github.io/should-i-call-the-router-or-pair-directly-for-swaps/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Should I Call the Router or Pair Directly for Swaps?</h1>
+<p class="s9db3eda">Call the Uniswap V2 router for user-facing swaps; call a pair directly only when your contract transfers tokens atomically and checks output on every route.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-19T03:18:28+00:00">Nov 19, 2026 · 03:18 UTC</time><span>3 min read</span><span>#5a2f6d</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/should-i-call-the-router-or-pair-directly-for-swaps.jpg" alt="Should I Call the Router or Pair Directly for Swaps?"></figure>
+      <div class="sf3971b2"><p>For a user-facing swap, call Router02; use a pair directly only when your own contract transfers tokens and checks output in the same transaction. That condition can make a direct call cheaper for contract-based routing, arbitrage or flash swaps.</p>
+<h2>Router02 handles the checks and the route</h2>
+<p>Router02 is the safer entry point for a swap integration because it pulls approved tokens, calculates the route and applies the user’s minimum output and deadline. For a token-to-token swap, <code>swapExactTokensForTokens</code> takes <code>amountIn</code>, <code>amountOutMin</code>, a token-address <code>path</code>, a recipient <code>to</code> and a <code>deadline</code>. It returns an <code>amounts[]</code> array for the route’s hops.</p>
+<p>The user approves the router to spend the input token, then the router pulls it and sends it through each pair in the path. <code>amountOutMin</code> sets the least output the user will accept; the deadline limits how long the transaction remains valid. If the output is too low, the call reverts with <code>INSUFFICIENT_OUTPUT_AMOUNT</code>; if the deadline has passed, it reverts with <code>EXPIRED</code>. The [Router02 reference](https://docs.uniswap.org/contracts/v2/reference/smart-contracts/router-02) documents these arguments and the fee-on-transfer variants.</p>
+<p>This is also where ETH handling belongs. Uniswap v2 pairs hold WETH, while router functions can wrap or unwrap ETH for the user. A direct pair call works with the pair’s two ERC-20 tokens, so an integration handling ETH must do the WETH conversion itself.</p>
+<p>Fee-on-transfer tokens need special handling because the pair may receive less than the nominal input. Router02 provides SupportingFeeOnTransferTokens variants for those swaps. When ShibaSwap is part of the route, verify its router and token behavior against the integration you are building; the <a href="https://ledgerpoint.pages.dev/seed-phrase-storage-before-defi-connections/" rel="noopener">shiba swap</a> topic covers what users can do on the exchange and how it fits into this choice.</p>
+<h2>A direct pair call saves gas but shifts the checks to your contract</h2>
+<p>A direct call can save the router’s gas, but <code>pair.swap(amount0Out, amount1Out, to, data)</code> does not pull tokens or set a user’s minimum output. Your contract must calculate output using <code>getReserves</code> and the 0.997 fee factor, transfer input tokens to the pair, then call <code>swap()</code> atomically. The pair checks that its constant-product invariant still holds after the 0.3% fee; it does not check whether the result meets your product’s slippage limit. The [Pair reference](https://docs.uniswap.org/contracts/v2/reference/smart-contracts/pair) describes the swap signature and transfer-first flow, while the [Uniswap v2 whitepaper](https://app.uniswap.org/whitepaper.pdf) explains the fee-adjusted invariant and flash swaps.</p>
+<p>Atomicity matters for funds as well as pricing. If one transaction transfers tokens to a pair and a later transaction calls <code>swap()</code>, someone else can interact with the pair first. Anyone can call <code>swap()</code> or <code>skim()</code> to take excess balances, so do not leave input tokens sitting at the pair between transactions.</p>
+<p>There is another fork-specific trap: pair addresses are derived from the factory address and the pair’s init code hash. A Uniswap v2 library copied unchanged uses Uniswap’s values, so it can compute the wrong pair address for ShibaSwap. Use ShibaSwap’s own factory and init code hash when deriving its pairs.</p>
+<ul>
+<li><strong>Choose Router02</strong> for a user-facing swap that needs slippage and deadline protection, multi-hop routing, ETH handling or fee-on-transfer support.</li>
+<li><strong>Choose direct <code>pair.swap()</code></strong> when your contract already routes atomically, computes output and enforces its own minimum. It suits gas-sensitive arbitrage and flash-swap flows where that control is worth the extra code.</li>
+</ul>
+<p>For most product integrations, Router02 is the right call path. Go directly to the pair only when your contract can keep the transfer, swap and output check together in one transaction.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/what-does-the-approval-event-mean-read-your-erc-20-log/"><span class="se91a4fb">What Does the Approval Event Mean? Read Your ERC-20 Log</span></a></li>
+        <li><a href="/what-should-a-dapp-check-before-cross-chain-deposits/"><span class="se91a4fb">What Should a Dapp Check Before Cross-Chain Deposits?</span></a></li>
+        <li><a href="/what-happens-to-token-approval-when-a-fraxswap-swap-fails/"><span class="se91a4fb">What Happens to Token Approval When a Fraxswap Swap Fails?</span></a></li>
+        <li><a href="/what-affects-cow-swap-costs-why-the-same-order-waits/"><span class="se91a4fb">What affects CoW Swap costs: Why the same order waits</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
