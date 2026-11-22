@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERC-20 Approval Event: How to Check Current Allowance</title>
+<meta name="description" content="Does an ERC-20 approval event show the current allowance? It records the value set by that transaction; read allowance(owner, spender) for today’s value.">
+<link rel="canonical" href="https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Does an ERC-20 Approval event show the current allowance?">
+<meta property="og:description" content="Does an ERC-20 approval event show the current allowance? It records the value set by that transaction; read allowance(owner, spender) for today’s value.">
+<meta property="og:url" content="https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/does-an-erc-20-approval-event-show-the-current-allowance-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Does an ERC-20 Approval event show the current allowance?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Does an ERC-20 Approval event show the current allowance?">
+<meta name="twitter:description" content="Does an ERC-20 approval event show the current allowance? It records the value set by that transaction; read allowance(owner, spender) for today’s value.">
+<meta property="article:published_time" content="2026-11-22T04:50:29+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/#webpage",
+      "url": "https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/",
+      "name": "ERC-20 Approval Event: How to Check Current Allowance",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/#article",
+      "headline": "Does an ERC-20 Approval event show the current allowance?",
+      "isAccessibleForFree": true,
+      "description": "Does an ERC-20 approval event show the current allowance? It records the value set by that transaction; read allowance(owner, spender) for today’s value.",
+      "datePublished": "2026-11-22T04:50:29+00:00",
+      "dateModified": "2026-11-22T04:50:29+00:00",
+      "url": "https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 575,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/does-an-erc-20-approval-event-show-the-current-allowance-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/does-an-erc-20-approval-event-show-the-current-allowance-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/does-an-erc-20-approval-event-show-the-current-allowance-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Does an ERC-20 Approval event show the current allowance?",
+          "item": "https://cryptonsu.github.io/does-an-erc-20-approval-event-show-the-current-allowance/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">Does an ERC-20 Approval event show the current allowance?</h1>
+<p class="s9db3eda">Does an ERC-20 approval event show the current allowance? It records the value set by that transaction; read allowance(owner, spender) for today’s value.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-22T04:50:29+00:00">Nov 22, 2026 · 04:50 UTC</time><span>3 min read</span><span>#d5b7c2</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/does-an-erc-20-approval-event-show-the-current-allowance.jpg" alt="Does an ERC-20 Approval event show the current allowance?"></figure>
+      <div class="sf3971b2"><p>An ERC-20 Approval event records the value set by that approval transaction; it does not necessarily show the current allowance. A later transferFrom can reduce the allowance without a new Approval event, so read allowance(owner, spender) from the token contract at the latest block to see what remains.</p>
+<p>Say you approve a contract to spend 100 tokens. The token contract emits an Approval event containing your wallet address as owner, the contract’s address as spender, and 100 as value. That log is a record of the approval transaction, much like a dated receipt; it is not a live reading of the permission.</p>
+<h2>The event records a past approval</h2>
+<p>The event’s value is the amount recorded when approve was called. It describes what that transaction set, not a continuously updated total. The allowance is the permission the token contract currently reports for a particular owner and spender.</p>
+<p>Now say the spender later calls transferFrom to move 30 tokens from your wallet. The token contract can reduce the allowance from 100 to 70 as part of that transfer. If it emits no new Approval event for that reduction, the original event still says 100. Replaying that event alone would overstate what remains.</p>
+<p>This is why the event and the allowance answer different questions. The Approval event shows what value an approval transaction recorded. The allowance(owner, spender) view function asks the token contract for the permission currently stored for those two addresses.</p>
+<p>For a practical explanation of the log fields, <a href="https://cryptonsu.github.io/what-does-the-approval-event-mean-read-your-erc-20-log/">how revokecash explains ERC-20 logs</a> can help you identify the owner, spender and value in your case. That makes it easier to match an event to the wallet permission you want to inspect with revokecash.</p>
+<p>To check the current value, call allowance(owner, spender) on the token contract at the latest block. Use the wallet address that granted permission as owner, and the approved smart contract address as spender. The returned value is the allowance reported at that block; an event from an earlier transaction remains a historical record.</p>
+<p>Keep the token contract in view, too: allowances belong to a specific token, owner and spender combination. An event from one token contract does not give the allowance for another. Match all three before comparing the event’s value with the current read.</p>
+<p>Before the transfer, the illustrative case had a 100-token allowance and an event recording 100. After the 30-token transfer, the same wallet and spender may have a current allowance of 70, while the old event still records 100. The addresses and the historical log stay the same; the stored permission changes because transferFrom used part of it.</p>
+<h2>Related questions</h2>
+<h3>What does an unlimited ERC-20 approval mean?</h3>
+<p>An unlimited ERC-20 approval sets a very large allowance for a spender, rather than a small amount sized to one transfer. The relevant current value is still the one returned by allowance(owner, spender). Read it for the specific token, wallet and spender you are checking.</p>
+<h3>Why can an approval value appear in hexadecimal?</h3>
+<p>An approval value can appear in hexadecimal because transaction logs encode event data as bytes, which explorers often display in that format. The value still represents the amount recorded by the approval transaction. Decode it using the token’s decimals to read it in token units, then query allowance(owner, spender) for the current on-chain amount.</p>
+<p>For the permission that remains now, read allowance(owner, spender) at the latest block; use the Approval event to understand what an earlier approval transaction recorded.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/tether-backs-scrypts-expansion-into-institutional-payments/"><span class="se91a4fb">Tether backs SCRYPT’s expansion into institutional payments</span></a></li>
+        <li><a href="/us-gets-court-authority-over-1-2b-in-binance-hack-crypto/"><span class="se91a4fb">US gets court authority over $1.2B in Binance hack crypto</span></a></li>
+        <li><a href="/should-i-speed-up-or-cancel-a-stuck-swap-get-past-the-nonce-queue/"><span class="se91a4fb">Should I speed up or cancel a stuck swap? Get past the nonce queue</span></a></li>
+        <li><a href="/cancel-a-stuck-swap-transaction-in-metamask-and-keep-your-tokens/"><span class="se91a4fb">Cancel a stuck swap transaction in MetaMask and keep your tokens</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
