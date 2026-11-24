@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to choose TWAP part count and interval for a sale</title>
+<meta name="description" content="Choose a TWAP part count and interval by checking price impact per part, then balance pool recovery time against the network cost of each execution.">
+<link rel="canonical" href="https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Set TWAP Parts and Timing for a Token Sale">
+<meta property="og:description" content="Choose a TWAP part count and interval by checking price impact per part, then balance pool recovery time against the network cost of each execution.">
+<meta property="og:url" content="https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/how-to-set-twap-parts-and-timing-for-a-token-sale-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Set TWAP Parts and Timing for a Token Sale"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Set TWAP Parts and Timing for a Token Sale">
+<meta name="twitter:description" content="Choose a TWAP part count and interval by checking price impact per part, then balance pool recovery time against the network cost of each execution.">
+<meta property="article:published_time" content="2026-11-24T22:40:43+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/#webpage",
+      "url": "https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/",
+      "name": "How to choose TWAP part count and interval for a sale",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/#article",
+      "headline": "How to Set TWAP Parts and Timing for a Token Sale",
+      "isAccessibleForFree": true,
+      "description": "Choose a TWAP part count and interval by checking price impact per part, then balance pool recovery time against the network cost of each execution.",
+      "datePublished": "2026-11-24T22:40:43+00:00",
+      "dateModified": "2026-11-24T22:40:43+00:00",
+      "url": "https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 701,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-to-set-twap-parts-and-timing-for-a-token-sale-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-to-set-twap-parts-and-timing-for-a-token-sale-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-to-set-twap-parts-and-timing-for-a-token-sale-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Set TWAP Parts and Timing for a Token Sale",
+          "item": "https://cryptonsu.github.io/how-to-set-twap-parts-and-timing-for-a-token-sale/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">How to Set TWAP Parts and Timing for a Token Sale</h1>
+<p class="s9db3eda">Choose a TWAP part count and interval by checking price impact per part, then balance pool recovery time against the network cost of each execution.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-24T22:40:43+00:00">Nov 24, 2026 · 22:40 UTC</time><span>4 min read</span><span>#58cb66</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/how-to-set-twap-parts-and-timing-for-a-token-sale.jpg" alt="How to Set TWAP Parts and Timing for a Token Sale"></figure>
+      <div class="sf3971b2"><p>For a cowswap TWAP sale, choose the fewest parts that keep each part’s estimated price impact below about 0.5%, then space them long enough for the pool to rebalance. Start with your Safe holding the sell token and your total amount decided; test a part size in a swap quote, set the count and interval, then review the schedule and sign. The order list confirms the task is done when it shows your chosen count and schedule.</p>
+<h2>How do you choose the part count and interval?</h2>
+<p>Part count sets the amount sold each time: divide the total by the number of parts. A smaller part can reduce price impact because it asks less of the pool in one trade. But each part settles as its own order and has its own network cost, so doubling the count also roughly doubles the number of charges.</p>
+<p>Begin with a quote for one part’s size and look at its estimated price impact. Aim for under about 0.5% per part as a working target, then divide your total by the largest part size that meets it and round up. The result is a starting count, not a guarantee: pool depth and the quote can change, so check the resulting per-part amount again before signing.</p>
+<p>Take a sizable token sale and test a candidate part amount in the swap quote. If that amount pushes estimated impact above the target, reduce the part size and increase the count until the quote is below it. The <a href="https://paragraph.com/@reciruhuz08/how-to-sell-eth-for-usdc-on-cowswap-and-verify-receipt" rel="noopener">cowswap limit orders</a> topic adds useful background on setting order price limits; cowswap TWAP price protection is a separate guardrail for an unfavorable price move, not a substitute for sizing each part.</p>
+<p>Set the interval to give arbitrage time to restore the pool price between executions. Several minutes or more is a reasonable starting point for a thin token, but the needed time depends on how quickly that pool’s price recovers. A shorter gap can send the next part into a pool that has not yet rebalanced; a longer gap spreads the sale further across time.</p>
+<p>Then weigh that recovery time against cost and market exposure. On Ethereum mainnet, many small parts can cost more in repeated network charges than they save in price impact. Total network cost is approximately the part count multiplied by the cost per part. Total duration is parts multiplied by interval, so increasing either can lengthen the run and leave more time for market moves to affect execution.</p>
+<h2>How do you enter and confirm the schedule?</h2>
+<p>In cowswap, a TWAP order runs through a Safe using CoW Protocol’s ComposableCoW framework. The Safe holds and signs the conditional order; each scheduled part is handled as its own order. With the Safe connected and the TWAP tab open, use this sequence:</p>
+<ol>
+<li>Enter the total sell amount. The form should show the token and amount you intend to sell.</li>
+<li>Test one candidate part size in a swap quote. The quote shows the estimated price impact for that amount.</li>
+<li>Set the number of parts from the quote result, rounding up from total amount divided by the acceptable part size. The form shows the per-part amount.</li>
+<li>Set the part duration or interval long enough for the pool to rebalance. The form shows the resulting schedule and total duration.</li>
+<li>Set price protection to define the unfavorable price movement you are willing to tolerate. The setting appears with the order parameters for review.</li>
+<li>Review the per-part amount and total duration, then sign with the Safe. The TWAP order appears in the order list with the chosen part count and schedule; that confirms setup is complete.</li>
+</ol>
+<h2>Related</h2>
+<h3>What price protection should a TWAP order use?</h3>
+<p>Price protection should match how far the sale price may move unfavorably before a part should stop. Choose a tolerance you can accept for the order, then review it alongside part size: protection controls the execution boundary, while part size is what you tested for price impact.</p>
+<h3>Can a running TWAP order be cancelled?</h3>
+<p>A running TWAP can be cancelled from the orders overview. Review the active order there and use its available cancel action; the schedule shown in the order list lets you identify the order you are changing.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/okx-and-ice-open-tokenized-securities-venue-with-113-assets/"><span class="se91a4fb">OKX and ICE open tokenized securities venue with 113 assets</span></a></li>
+        <li><a href="/polygon-approvals-on-revokecash-which-network-to-choose/"><span class="se91a4fb">Polygon approvals on revokecash: Which network to choose?</span></a></li>
+        <li><a href="/berachain-bridge-for-beginners-what-sets-transfer-speed/"><span class="se91a4fb">Berachain bridge for beginners: what sets transfer speed</span></a></li>
+        <li><a href="/swapping-bridged-eth-through-syncswap-on-zksync-era/"><span class="se91a4fb">Swapping bridged ETH through SyncSwap on zkSync Era</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
