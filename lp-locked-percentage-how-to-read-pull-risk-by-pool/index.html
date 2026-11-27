@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to read LP locked percentage on rugcheck by pool</title>
+<meta name="description" content="How to read the LP locked percentage on rugcheck: separate burned LP from time-locked LP, then use each pool’s liquidity and unlock date to judge what can be pulled.">
+<link rel="canonical" href="https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="LP locked percentage: How to read pull risk by pool">
+<meta property="og:description" content="How to read the LP locked percentage on rugcheck: separate burned LP from time-locked LP, then use each pool’s liquidity and unlock date to judge what can be pulled.">
+<meta property="og:url" content="https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/lp-locked-percentage-how-to-read-pull-risk-by-pool-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LP locked percentage: How to read pull risk by pool"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LP locked percentage: How to read pull risk by pool">
+<meta name="twitter:description" content="How to read the LP locked percentage on rugcheck: separate burned LP from time-locked LP, then use each pool’s liquidity and unlock date to judge what can be pulled.">
+<meta property="article:published_time" content="2026-11-27T16:22:06+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/#webpage",
+      "url": "https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/",
+      "name": "How to read LP locked percentage on rugcheck by pool",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/#article",
+      "headline": "LP locked percentage: How to read pull risk by pool",
+      "isAccessibleForFree": true,
+      "description": "How to read the LP locked percentage on rugcheck: separate burned LP from time-locked LP, then use each pool’s liquidity and unlock date to judge what can be pulled.",
+      "datePublished": "2026-11-27T16:22:06+00:00",
+      "dateModified": "2026-11-27T16:22:06+00:00",
+      "url": "https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 660,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/lp-locked-percentage-how-to-read-pull-risk-by-pool-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/lp-locked-percentage-how-to-read-pull-risk-by-pool-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/lp-locked-percentage-how-to-read-pull-risk-by-pool-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "LP locked percentage: How to read pull risk by pool",
+          "item": "https://cryptonsu.github.io/lp-locked-percentage-how-to-read-pull-risk-by-pool/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">LP locked percentage: How to read pull risk by pool</h1>
+<p class="s9db3eda">How to read the LP locked percentage on rugcheck: separate burned LP from time-locked LP, then use each pool’s liquidity and unlock date to judge what can be pulled.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-27T16:22:06+00:00">Nov 27, 2026 · 16:22 UTC</time><span>4 min read</span><span>#a6cf24</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/lp-locked-percentage-how-to-read-pull-risk-by-pool.jpg" alt="LP locked percentage: How to read pull risk by pool"></figure>
+      <div class="sf3971b2"><p>Use rugcheck to read the LP locked percentage for each pool, then check whether that share is burned or time-locked. Unlocked LP tokens can be redeemed by their holder, so they can put the pool’s liquidity within reach of a withdrawal.</p>
+<p>Start with the report for the correct mint address; a different mint means a different token. For a token scam risk check, <a href="https://rugcheck.cc" rel="noopener">rugcheck</a> helps you review token risks before interacting with the coin.</p>
+<h2>Read the percentage separately for each pool</h2>
+<p>The LP locked percentage describes the share of a pool’s LP tokens that are burned or held in a lock. Read it alongside that pool’s liquidity: a percentage alone does not tell you how much value may be withdrawn.</p>
+<ol>
+<li><strong>Match the mint.</strong> Confirm the mint address for the token you are checking. Then use the report’s pool entries to identify each market, such as a Raydium pool, and note its liquidity and LP locked percentage.</li>
+<li><strong>Record each pool’s figures.</strong> Write down the liquidity and percentage for every pool separately. A token can trade in several pools, and each pool can have a different lock status. Do not treat one market’s percentage as a token-wide figure.</li>
+<li><strong>Separate burned LP from time-locked LP.</strong> LP tokens represent a proportional claim on a pool’s reserves. Burned LP tokens are destroyed and cannot be redeemed; time-locked LP tokens are held until the lock expires, then return to their owner.</li>
+<p>A locked percentage can include both kinds. The visible percentage may therefore combine a permanent burn with LP that becomes available later. Those shares have different consequences for liquidity.</p>
+<li><strong>Open the lock record on Solscan.</strong> Read the unlock date and the wallet named to receive the LP. The recipient matters because it identifies who can redeem those tokens when the lock ends. Note the date alongside the pool’s liquidity.</li>
+<li><strong>Estimate what can be withdrawn, and when.</strong> For each pool, apply its unlocked share to its liquidity to estimate the amount currently exposed; separately note the time-locked amount and its expiry. Then add the amounts across pools, keeping each unlock date attached to its pool.</li>
+</ol>
+<h2>Weight each pool by its liquidity</h2>
+<p>The useful risk estimate is tied to pool size, not a simple average of percentages. A small pool with no locked LP can matter less than a much larger pool where a substantial share is unlocked.</p>
+<p>For instance, imagine one large pool with most of its liquidity and a high locked percentage, plus a much smaller pool with none locked. Averaging the two percentages would give the small market equal weight, even though it holds less liquidity. Work out the exposed share pool by pool, then sum the amounts. Treat any time-locked portion as potentially withdrawable at its expiry, rather than as permanently removed.</p>
+<p>The difference between burned and locked LP is visible in what happens next: burned tokens cannot be redeemed, while locked tokens have an unlock date and a recipient. Confusing the two can make a temporary lock look permanent and understate future withdrawal risk. A lock record is the place to verify when the LP returns and to whom.</p>
+<p>You are done when you can state the amount of liquidity exposed in each pool and the date any time-locked LP becomes available. That gives you a practical view of how much liquidity could be pulled now and how much could become withdrawable later.</p>
+<h2>Related questions</h2>
+<h3>What is the difference between burned and locked LP?</h3>
+<p>Burned LP tokens are destroyed and cannot be redeemed; locked LP tokens return to their owner when the lock expires.</p>
+<h3>Can liquidity be removed after LP is locked?</h3>
+<p>The locked LP cannot be redeemed while the lock is active. At expiry, the LP returns to its owner, who can then redeem it against the pool’s reserves.</p>
+<p>Working tip: keep a separate line for every pool and write its unlock date beside the liquidity figure. This avoids mistaking a small unlocked market for the main source of pull risk.</p></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/eu-proposal-targets-russia-linked-crypto-networks-and-60-banks/"><span class="se91a4fb">EU proposal targets Russia-linked crypto networks and 60 banks</span></a></li>
+        <li><a href="/how-to-use-renbridge-with-metamask-and-a-bitcoin-wallet-the-mint/"><span class="se91a4fb">How to Use RenBridge With MetaMask and a Bitcoin Wallet: The Mint</span></a></li>
+        <li><a href="/swap-slippage-when-to-use-auto-or-custom/"><span class="se91a4fb">Swap Slippage: When to Use Auto or Custom</span></a></li>
+        <li><a href="/why-a-revoked-approval-stays-listed-until-indexing-catches-up/"><span class="se91a4fb">Why a Revoked Approval Stays Listed Until Indexing Catches Up</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
