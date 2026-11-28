@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to deposit into a Beefy app vault and verify shares</title>
+<meta name="description" content="Beefy app vault deposits mint mooTokens as your share: approve the token, deposit, then verify your balance and calculate its value from price per share.">
+<link rel="canonical" href="https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1816">
+<meta name="author" content="Crypto Readout Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Readout">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How do you verify a Beefy vault deposit on-chain?">
+<meta property="og:description" content="Beefy app vault deposits mint mooTokens as your share: approve the token, deposit, then verify your balance and calculate its value from price per share.">
+<meta property="og:url" content="https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/">
+<meta property="og:image" content="https://cryptonsu.github.io/assets/covers/how-do-you-verify-a-beefy-vault-deposit-on-chain-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How do you verify a Beefy vault deposit on-chain?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How do you verify a Beefy vault deposit on-chain?">
+<meta name="twitter:description" content="Beefy app vault deposits mint mooTokens as your share: approve the token, deposit, then verify your balance and calculate its value from price per share.">
+<meta property="article:published_time" content="2026-11-28T03:02:04+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sb5d864be92.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Readout" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptonsu.github.io/#website",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Readout reports on Bitcoin, Ethereum and altcoin markets, DeFi protocols, exchanges, stablecoins, network upgrades and crypto regulation worldwide."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/#webpage",
+      "url": "https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/",
+      "name": "How to deposit into a Beefy app vault and verify shares",
+      "isPartOf": {
+        "@id": "https://cryptonsu.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/#article",
+      "headline": "How do you verify a Beefy vault deposit on-chain?",
+      "isAccessibleForFree": true,
+      "description": "Beefy app vault deposits mint mooTokens as your share: approve the token, deposit, then verify your balance and calculate its value from price per share.",
+      "datePublished": "2026-11-28T03:02:04+00:00",
+      "dateModified": "2026-11-28T03:02:04+00:00",
+      "url": "https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptonsu.github.io/#org"
+      },
+      "wordCount": 741,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-do-you-verify-a-beefy-vault-deposit-on-chain-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-do-you-verify-a-beefy-vault-deposit-on-chain-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptonsu.github.io/assets/covers/how-do-you-verify-a-beefy-vault-deposit-on-chain-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptonsu.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How do you verify a Beefy vault deposit on-chain?",
+          "item": "https://cryptonsu.github.io/how-do-you-verify-a-beefy-vault-deposit-on-chain/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cryptonsu.github.io/#org",
+      "name": "Crypto Readout",
+      "url": "https://cryptonsu.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptonsu.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptonsu.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5a3c0ea" href="#main">Skip to main content</a>
+<header class="s3390dc8">
+  <div class="sda037c1 s1ab2972">
+    <a class="s421432f" href="/">Crypto Readout</a>
+    <p class="s6073204">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="sda037c1 seb90d28">
+  <div class="sbf85cf3">
+    <article class="sa3fadb7">
+      <header class="s576a3ca">
+        <h1 class="s9d6eb87">How do you verify a Beefy vault deposit on-chain?</h1>
+<p class="s9db3eda">Beefy app vault deposits mint mooTokens as your share: approve the token, deposit, then verify your balance and calculate its value from price per share.</p>        <p class="scf017da s5dc3c51"><span>By Crypto Readout Editorial</span><time datetime="2026-11-28T03:02:04+00:00">Nov 28, 2026 · 03:02 UTC</time><span>4 min read</span><span>#7f039e</span></p>
+      </header>
+      <figure class="s6beed0d"><img width="1200" height="630" fetchpriority="high" class="s47cf977" src="/assets/covers/how-do-you-verify-a-beefy-vault-deposit-on-chain.jpg" alt="How do you verify a Beefy vault deposit on-chain?"></figure>
+      <div class="sf3971b2"><p>Beefy app deposits work by sending a supported token to a vault and receiving mooTokens that represent your share. Connect your wallet on the vault’s chain, approve the token, deposit, then verify the mooTokens and price per full share on-chain. The <a href="https://beefyapp.xyz" rel="noopener">Beefy app</a> gives you the place to access the vault and carry out the deposit.</p>
+<h2>What to have ready before depositing</h2>
+<p>A Beefy vault deposit starts with assets on the same chain as the vault. Have a Web3 wallet, the vault’s deposit token or a token supported by Beefy ZAP, and enough of the chain’s native token to pay gas for the deposit and a later withdrawal.</p>
+<p>Match the wallet network to the vault’s chain before choosing a vault. Beefy Vaults can be available across chains such as Arbitrum, Base and Polygon; the same token name on another chain is not the same deposit asset.</p>
+<p>Read the vault page before depositing. Check its strategy, underlying platform and stated fees so you know what the vault will do with the assets and what costs apply. A vault’s strategy determines how it earns and compounds rewards; fees can affect the amount that accrues to depositors.</p>
+<h2>How to deposit and verify your Beefy vault position</h2>
+<ol>
+<li><strong>Open the Beefy crypto app and connect your wallet.</strong> Confirm the wallet address and selected network. The visible result is a connected wallet on the chain where you hold the deposit assets.</li>
+<li><strong>Select the chain and vault.</strong> Choose a vault whose strategy and deposit asset you have reviewed. The vault page identifies the position you are about to enter.</li>
+<li><strong>Enter the amount.</strong> Use the vault’s deposit token, or a ZAP-supported token if you want Beefy ZAP to handle the conversion. The amount you intend to deposit should appear before you approve anything.</li>
+<li><strong>Approve the token.</strong> Set the allowance to the exact amount or choose an unlimited allowance if that is your preference. Review the wallet transaction and confirm it. The approval lets the vault use the token up to the allowed amount; it is separate from the deposit.</li>
+<li><strong>Deposit and keep gas in reserve.</strong> Submit the deposit transaction and confirm it in your wallet. The transaction should appear on the chain’s block explorer once included. Keep some native gas token in the wallet for a future withdrawal.</li>
+<li><strong>Import the mooToken contract and verify the position.</strong> Find the vault’s mooToken contract, add it to your wallet, then check the wallet balance and the vault page. The completed deposit is visible as a mooToken balance in the wallet and a deposited balance on the vault page.</li>
+</ol>
+<p>Take a deposit on Base. You connect the wallet on Base, select a Base vault, and review its strategy, platform and fees. After entering the amount, you approve the token and submit the deposit. Once the transaction is confirmed, the explorer shows the transaction and the mooToken transfer; importing that token makes the receipt balance visible in your wallet.</p>
+<p>That receipt balance is the key to valuing the position. Compounding generally raises the vault’s price per full share while your mooToken count stays flat: the tokens represent a growing claim on vault assets, like shares whose value changes over time.</p>
+<p>For the calculation, read the vault’s price per full share and multiply it by your mooToken balance: <strong>position value = mooTokens × price per full share</strong>. Use the values in matching units. For instance, if your wallet shows 4 mooTokens and the explorer reports a price per full share of 1.25 deposit tokens, the position represents 5 deposit tokens before any withdrawal costs or value changes. Importing the vault’s mooToken contract lets you see the receipt in your wallet; the explorer lets you independently read its balance and the share-price data.</p>
+<h2>Related</h2>
+<h3>Does Beefy charge a deposit fee?</h3>
+<p>Check the selected vault’s fee information before depositing, since fees depend on the vault and its strategy. Also account for the network’s gas cost, which is paid separately through wallet transactions.</p>
+<h3>How to withdraw from a Beefy vault</h3>
+<p>Open the same vault position, choose the withdrawal action, and review the amount and transaction before confirming. The vault returns the underlying assets according to its withdrawal process; keep native gas tokens available and verify the transaction and resulting wallet balance in the explorer.</p>
+<ul>
+<li>Match your wallet to the vault’s chain and review its strategy and fees.</li>
+<li>Approve the token, deposit, and confirm the transaction.</li>
+<li>Import the mooToken, then verify its balance and price per full share.</li>
+</ul></div>
+    </article>
+    <aside class="sd74efee" aria-labelledby="related-head">
+      <h2 class="s9271736" id="related-head">Related coverage</h2>
+      <ol class="sa9e8bf4">
+        <li><a href="/aave-liquidity-index-read-your-atoken-growth/"><span class="se91a4fb">Aave Liquidity Index: Read Your aToken Growth</span></a></li>
+        <li><a href="/what-is-liquidity-risk-in-defi-lending-know-when-you-can-exit/"><span class="se91a4fb">What Is Liquidity Risk in DeFi Lending? Know When You Can Exit</span></a></li>
+        <li><a href="/eu-proposes-sanctions-on-russia-linked-crypto-networks/"><span class="se91a4fb">EU proposes sanctions on Russia-linked crypto networks</span></a></li>
+        <li><a href="/what-changes-for-bridge-funds-at-each-rollup-stage/"><span class="se91a4fb">What Changes for Bridge Funds at Each Rollup Stage?</span></a></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</main>
+
+<footer class="s648a5fc">
+  <div class="sda037c1 s1e3b8b4">
+    <p class="s7e33c5e">Crypto Readout</p>
+    <nav class="sd4fd1ad" aria-label="Site">
+      <ul>
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s09e5325">News and analysis for information, not financial advice.</p>
+    <p class="s1d9c3c7">© 2026 Crypto Readout</p>
+  </div>
+</footer>
+</body>
+</html>
